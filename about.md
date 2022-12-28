@@ -2,7 +2,7 @@
 layout: page
 title: "ABOUT"
 description: "我会努力进步，做出更好的作品"
-header-img: "img/navi2.jpg"
+header-img: "img/navi.jpg"
 ---
 
 我，一个做漫画的 LSP。
