@@ -1,0 +1,55 @@
+# Site settings
+title: 萧家姐妹的故事 # 你的博客名字，可以定义修订
+header-img: "img/green.jpg"
+tagline: "cn"
+description: "关于萧家三姐妹的淫乱故事" # 一句话描述你的博客
+baseurl: ""
+url: "https://lyfllrr.github.io" # 此处填写你的博客地址
+
+# About/contact
+owner:
+  name: "NTR中毒患者" # 填写作者信息：名字
+
+# Data
+gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+
+twitter_username: weloventr4ever
+pixiv_username: 5082888
+
+# Build settings
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "NTR中毒患者" # 你的名字
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments
+comments:
+  provider: disqus # 使用 disqus 评论模块，读者翻墙才能看见
+  duoshuo:
+    short_name: disqus_vX4j3IrQ0V # 填写你的 disqus id
+  disqus:
+    short_name: disqus_vX4j3IrQ0V # 填写你的 disqus id
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: # 填写你  google_analytics id
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+# Links to include in footer navigation
