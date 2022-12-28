@@ -16,7 +16,7 @@ header-img: "img/navi.jpg"
 
 <div id='tag_cloud'>
 {% for tag in site.tags %}
-<a style="color:rgb(0, 200, 255) href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+<a style="color:rgb(0, 120, 220)" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 {% endfor %}
 </div>
 
