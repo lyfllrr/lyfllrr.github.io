@@ -1,10 +1,9 @@
 ---
 layout: page
-title: "Archive"
-description: "文章归档"
-header-img: "img/orange.jpg"
+title: "ARCHIVE"
+description: "作品一览"
+header-img: "img/navi.jpg"
 ---
-
 
 <ul class="listing">
 {% for post in site.posts %}
