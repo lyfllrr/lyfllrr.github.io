@@ -41,15 +41,15 @@ layout: default
                 {{ page.beforeImgsContent }}
                 <!-- PhotoSwipe框架调用 -->
                 <script type="module">
-                    import PhotoSwipeLightbox from 'dist/photoswipe-lightbox.esm.js';
+                    import PhotoSwipeLightbox from '/dist/photoswipe-lightbox.esm.js';
                     const lightbox = new PhotoSwipeLightbox({
                         gallery: '#my-gallery',
                         children: 'a',
-                        pswpModule: () => import('dist/photoswipe.esm.js')
+                        pswpModule: () => import('/dist/photoswipe.esm.js')
                     });
                     lightbox.init();
                 </script>
-                <link rel="stylesheet" href="dist/photoswipe.css">
+                <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
                     <div class="pswp-gallery" id="my-gallery">
                         {% for url in page.imgUrls %}
