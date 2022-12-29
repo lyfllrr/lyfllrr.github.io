@@ -39,6 +39,8 @@ thumbnails:
     https://thumbs4.imagebam.com/25/bf/34/MEHR7BN_t.jpg,
     https://thumbs4.imagebam.com/2a/2b/73/MEHR7BO_t.jpg,
   ]
+imgWidth: 1920
+imgHeight: 1080
 imgUrls:
   [
     https://images4.imagebam.com/af/9a/f8/MEHR7AR_o.jpg,
