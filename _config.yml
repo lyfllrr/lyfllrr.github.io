@@ -37,7 +37,7 @@ defaults:
     values:
       layout: "post"
       author: "NTR中毒患者" # 你的名字
-      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "/img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments
 comments:

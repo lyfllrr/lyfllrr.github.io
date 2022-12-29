@@ -5,14 +5,14 @@ layout: default
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header {
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
     }
 </style>
-<header class="intro-header highlight n">
+<header class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
+                <div class="post-heading" style="{% if page.headerStyle %}{{ page.headerStyle }}{% endif %}">
                     <div class="Tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
@@ -61,6 +61,7 @@ layout: default
                             target="_blank">
                             <img src="{{ url }}" alt="" />
                         </a>
+                        <br />
                         {% endfor %}
                     </div>
                 </div>
