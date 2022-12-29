@@ -4,11 +4,11 @@ layout: default
 
 <!-- Post Header -->
 <style type="text/css">
-    header.intro-header{
+    header.intro-header {
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
 </style>
-<header class="intro-header highlight n" >
+<header class="intro-header highlight n">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -22,7 +22,8 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif
+                        %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
         </div>
@@ -37,7 +38,27 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-
+                {{ page.beforeImgsContent }}
+                <!-- PhotoSwipe框架调用 -->
+                <script type="module">
+                    import PhotoSwipeLightbox from 'dist/photoswipe-lightbox.esm.js';
+                    const lightbox = new PhotoSwipeLightbox({
+                        gallery: '#my-gallery',
+                        children: 'a',
+                        pswpModule: () => import('dist/photoswipe.esm.js')
+                    });
+                    lightbox.init();
+                </script>
+                <link rel="stylesheet" href="dist/photoswipe.css">
+                <div id="app">
+                    <div class="pswp-gallery" id="my-gallery">
+                        {% for url in page.imgUrls %}
+                        <a href="{{ url }}" data-pswp-width="2160" data-pswp-height="3840" target="_blank">
+                            <img src="{{ url }}" alt="" />
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
                 {{ content }}
 
                 <hr>
@@ -45,35 +66,35 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+                            data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous
+                            Post</a>
                     </li>
                     {% endif %}
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+                            data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>
 
                 <!-- Duoshuo Share start -->
                 <style>
-                    .ds-share{
+                    .ds-share {
                         text-align: right;
                     }
-                    
-                    @media only screen and (max-width: 700px) {
-                        .ds-share {
 
-                        }
+                    @media only screen and (max-width: 700px) {
+                        .ds-share {}
                     }
                 </style>
 
-                <div class="ds-share"
-                    data-thread-key="{{page.id}}" data-title="{{page.title}}"
+                <div class="ds-share" data-thread-key="{{page.id}}" data-title="{{page.title}}"
                     data-images="{{ site.url }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
                     data-content="{{ content | strip_html | truncate:80 }} | Microdust:Azeril's blog"
                     data-url="{{site.url}}{{page.url}}">
- <!--                   <div class="ds-share-inline">
+                    <!--                   <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
 
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -84,14 +105,15 @@ layout: default
                       <div class="ds-share-icons-more">
                       </div>
                     </div> -->
-                <hr>
+                    <hr>
                 </div>
                 <!-- Duoshuo Share end-->
 
 
                 <!-- 多说评论框 start -->
                 <div class="comment">
-                    <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
+                    <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}"
+                        data-url="{{site.url}}{{page.url}}"></div>
                 </div>
                 <!-- 多说评论框 end -->
             </div>
@@ -103,14 +125,14 @@ layout: default
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"cnfeat"};
-    (function() {
+    var duoshuoQuery = { short_name: "cnfeat" };
+    (function () {
         var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
+        ds.type = 'text/javascript'; ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
 <!-- 多说公共JS代码 end -->
@@ -118,22 +140,22 @@ var duoshuoQuery = {short_name:"cnfeat"};
 <!-- async load function -->
 <script>
     function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
     }
 </script>
 
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function () {
         anchors.options = {
-          visible: 'always',
-          placement: 'right',
-          icon: ''
+            visible: 'always',
+            placement: 'right',
+            icon: ''
         };
         anchors.add().remove('.intro-header h1').remove('.subheading');
     })
@@ -141,11 +163,11 @@ var duoshuoQuery = {short_name:"cnfeat"};
 <style>
     /* place left on bigger screen */
     @media all and (min-width: 800px) {
-        .anchorjs-link{
+        .anchorjs-link {
             position: absolute;
             left: -0.75em;
             font-size: 1.1em;
-            margin-top : -0.1em;
+            margin-top: -0.1em;
         }
     }
 </style>
