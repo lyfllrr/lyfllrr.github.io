@@ -55,7 +55,7 @@ layout: default
                 <div id="app">
                     <div class="pswp-gallery" id="my-gallery">
                         {% for img in page.imgs %}
-                        <a href="{{ img.url }}"
+                        <a href="{{ img.imgUrl }}"
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
