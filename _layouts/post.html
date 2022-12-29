@@ -38,7 +38,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-                {{ page.beforeImgsContent }}
+                <p>{{ page.beforeImgsContent }}</p>
                 <!-- PhotoSwipe框架调用 -->
                 <script type="module">
                     import PhotoSwipeLightbox from '/dist/photoswipe-lightbox.esm.js';
@@ -59,7 +59,7 @@ layout: default
                         {% endfor %}
                     </div>
                 </div>
-                {{ content }}
+                <p>{{ content }}</p>
 
                 <hr>
 
