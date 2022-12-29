@@ -54,12 +54,12 @@ layout: default
                 <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
                     <div class="pswp-gallery" id="my-gallery">
-                        {% for img in page.imgs %}
-                        <a href="{{ img.url }}"
+                        {% for url in page.imgUrls %}
+                        <a href="{{ url }}"
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
-                            <img src="{{ img.thumbnail }}" alt="" />
+                            <img src="{{ url }}" alt="" />
                         </a>
                         {% endfor %}
                     </div>
