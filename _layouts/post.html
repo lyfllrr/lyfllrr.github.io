@@ -54,8 +54,11 @@ layout: default
                     <div class="pswp-gallery" id="my-gallery">
                         {% for url in page.imgUrls %}
                         <a href="{{ url }}" data-pswp-width="2160" data-pswp-height="3840" target="_blank">
-                            <img src="{{ url }}" alt="" />
+                            {% endfor %}
+                            {% for thumbnail in page.thumbnails %}
+                            <img src="{{ thumbnail }}" alt="" />
                         </a>
+                        <br />
                         {% endfor %}
                     </div>
                 </div>
