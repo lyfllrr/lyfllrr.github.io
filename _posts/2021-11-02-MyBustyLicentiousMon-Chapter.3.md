@@ -1,6 +1,6 @@
 ---
 layout: post
-headerStyle: color:rgb(33,33,33)
+headerStyle:
 title: 丰乳肥臀的淫乱妈妈第三章
 header-img: https://images4.imagebam.com/f8/d3/84/MEHRN9I_o.jpg
 subtitle: 妈妈尝到了同学的肉棒
