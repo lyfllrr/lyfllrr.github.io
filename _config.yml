@@ -2,9 +2,9 @@
 title: NTR中毒疗养中心 # 你的博客名字，可以定义修订
 header-img: "img/navi.jpg"
 tagline: "cn"
-description: "关于萧家三姐妹的淫乱故事" # 一句话描述你的博客
+description: "关于萧家姐妹的淫乱故事" # 一句话描述你的博客
 baseurl: ""
-url: "https://lyfllrr.github.io" # 此处填写你的博客地址
+url: "https://naturerealized.com" # 此处填写你的博客地址
 
 # About/contact
 owner:
@@ -42,10 +42,12 @@ defaults:
 # Comments
 comments:
   provider: disqus # 使用 disqus 评论模块，读者翻墙才能看见
-  duoshuo:
-    short_name: disqus_vX4j3IrQ0V # 填写你的 disqus id
   disqus:
     short_name: disqus_vX4j3IrQ0V # 填写你的 disqus id
+
+# Plugin
+plugins:
+  - jekyll-feed
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: # 填写你  google_analytics id
