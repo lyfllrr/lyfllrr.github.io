@@ -2,14 +2,13 @@
 layout: post
 headerStyle: color:rgb(33,33,33)
 title: 丰乳肥臀的淫乱妈妈第二章
-header-img: https://images4.imagebam.com/3c/e8/0e/MEHRM4T_o.jpg
+image: https://images4.imagebam.com/3c/e8/0e/MEHRM4T_o.jpg
 subtitle: 妈妈尝到了同学的肉棒
 date: 2021-10-1
 categories: blog
 isOriginalArtwork: true
 tags: [丰乳肥臀的淫乱妈妈, 萧媚儿, 绿妻, 绿母, 小马开大车]
-description:
-beforeImgsContent: 鬼使神差般的，我把同学带回了家里，没想到妈妈一见到他们，不知被他们用了什么花言巧语，竟然立刻将他们领进了卧室，干柴烈火一般激烈地交合起来，我也在门外看得血脉喷张。一番云雨，妈妈饥渴的身体被小武和小刚轮番灌溉后，变得更加娇艳了。以后……小武和小刚会成常客吗？
+description: 鬼使神差般的，我把同学带回了家里，没想到妈妈一见到他们，不知被他们用了什么花言巧语，竟然立刻将他们领进了卧室，干柴烈火一般激烈地交合起来，我也在门外看得血脉喷张。一番云雨，妈妈饥渴的身体被小武和小刚轮番灌溉后，变得更加娇艳了。以后……小武和小刚会成常客吗？
 imgWidth: 1920
 imgHeight: 1080
 imgUrls:

@@ -5,7 +5,7 @@ layout: default
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header {
-        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
+        background-image: url('{% if page.image %}{{ page.image }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
     }
 </style>
 <header class="intro-header">
@@ -30,7 +30,12 @@ layout: default
     </div>
 </header>
 
+<link rel="stylesheet" href="/css/backtop.css"> <!-- Back Top -->
+<script type="text/javascript" src="/js/backtop.js"></script> <!-- Back Top -->
 
+<div id="back-top">
+    <a href="#top" title="回到顶部"></a>
+</div>
 
 
 <!-- Post Content -->
@@ -38,7 +43,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-                <p>{{ page.beforeImgsContent }}</p>
+                <p>{{ page.description }}</p>
                 <!-- PhotoSwipe框架调用 start-->
                 <script type="module">
                     import PhotoSwipeLightbox from '/dist/photoswipe-lightbox.esm.js';
@@ -66,6 +71,7 @@ layout: default
                     </div>
                 </div>
                 <!-- PhotoSwipe框架调用 end -->
+                <!-- 图片之后如果有正文会出现在这里 -->
                 <p>{{ content }}</p>
                 <!-- 版权声明(仅原创内容时显示) start -->
                 {% if page.isOriginalArtwork %}
