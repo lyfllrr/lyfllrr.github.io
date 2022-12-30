@@ -1,6 +1,6 @@
 ---
 layout: post
-headerStyle: color:rgb(33,33,33)
+headerStyle: 
 title: 丰乳肥臀的淫乱妈妈第一章
 header-img: https://images4.imagebam.com/1a/e6/c8/MEHRLS0_o.jpg
 subtitle: 妈妈的另一面
