@@ -50,7 +50,7 @@ plugins:
   - jekyll-feed
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: # 填写你  google_analytics id
+google_analytics: G-BW2PL3GXVR
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
