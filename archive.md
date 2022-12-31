@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ARCHIVE"
-description: "作品一览"
+description: "人生漫漫，祝你能快乐地消磨时间。"
 header-img: "img/navi.jpg"
 ---
 
