@@ -241,5 +241,4 @@ imgUrls:
     https://images4.imagebam.com/a0/6d/d2/MEHRO6Z_o.jpg,
     https://images4.imagebam.com/15/b5/fe/MEHRO70_o.jpg,
   ]
-comments: true
 ---

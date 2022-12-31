@@ -43,5 +43,4 @@ imgUrls:
     https://images4.imagebam.com/0c/f8/de/MEHR7BN_o.jpg,
     https://images4.imagebam.com/d8/7a/01/MEHR7BO_o.jpg,
   ]
-comments: true
 ---
