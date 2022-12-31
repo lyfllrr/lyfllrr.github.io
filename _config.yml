@@ -11,8 +11,8 @@ owner:
   name: "NTR中毒患者" # 填写作者信息：名字
 
 # Data
-gavatar: img/icon.ico # 浏览器地址栏小图标，可自定义更改
-favicon: img/icon.ico # 浏览器地址栏小图标，可自定义更改
+gavatar: /img/icon.ico # 浏览器地址栏小图标，可自定义更改
+favicon: /img/icon.ico # 浏览器地址栏小图标，可自定义更改
 
 twitter_username: weloventr4ever
 pixiv_username: 5082888

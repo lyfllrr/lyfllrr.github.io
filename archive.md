@@ -7,6 +7,7 @@ header-img: "img/navi.jpg"
 
 <ul class="listing">
 {% for post in site.posts %}
+{% if post.display or post.display == "" or post.display == nil %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
@@ -16,5 +17,6 @@ header-img: "img/navi.jpg"
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
   </li>
+{% endif %}
 {% endfor %}
 </ul>

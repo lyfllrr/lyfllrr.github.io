@@ -22,7 +22,7 @@ header-img: "img/navi.jpg"
 
 <ul class="listing">
 {% for tag in site.tags %}
-  <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
+  <h4 class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</h4>
 {% for post in tag[1] %}
   <li class="listing-item">
   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
