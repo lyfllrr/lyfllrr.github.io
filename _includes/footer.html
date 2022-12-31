@@ -6,7 +6,7 @@
                 <ul class="list-inline text-center">
                     <!-- kill the Facebook and Weibo -->
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <a href="{{ " /feed.xml" | prepend: site.baseurl }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    
+
                     <!--
                     {% if site.douban_username %}
                     <li>
@@ -86,7 +86,7 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} ❖ Powered by Jekyll.
+                    &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} ❖ Powered by Jekyll.
                 </p>
             </div>
         </div>
@@ -94,19 +94,27 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BW2PL3GXVR"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-BW2PL3GXVR');
+</script>
 
 <!-- Highlight.js -->
 <script>
-    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js",function(){
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () {
         hljs.initHighlightingOnLoad();
     })
 </script>
