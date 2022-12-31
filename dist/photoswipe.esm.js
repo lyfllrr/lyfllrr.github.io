@@ -2857,6 +2857,7 @@ class Keyboard {
         axis = 'y';
         break;
       case 39: // right
+      case 32: // space
         axis = 'x';
         isForward = true;
         break;
