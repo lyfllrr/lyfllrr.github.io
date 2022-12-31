@@ -47,14 +47,103 @@ layout: default
                 <!-- PhotoSwipe框架调用 start-->
                 <script type="module">
                     import PhotoSwipeLightbox from '/dist/photoswipe-lightbox.esm.js';
+                    const fullscreenAPI = getFullscreenAPI();
+                    const pswpContainer = getContainer();
+                    function getFullscreenPromise() {
+                        return new Promise((resolve) => {
+                            if (!fullscreenAPI || fullscreenAPI.isFullscreen()) {
+                                resolve();
+                                return;
+                            }
+
+                            document.addEventListener(fullscreenAPI.change, (event) => {
+                                pswpContainer.style.display = 'block';
+                                setTimeout(function () {
+                                    resolve();
+                                }, 300);
+                            }, { once: true });
+
+                            fullscreenAPI.request(pswpContainer);
+                        });
+                    }
+
                     const lightbox = new PhotoSwipeLightbox({
                         gallery: '#my-gallery',
                         children: 'a',
                         pswpModule: () => import('/dist/photoswipe.esm.js'),
-                        loop: false,
-                        preload: [1, 4]
+                        openPromise: getFullscreenPromise,
+                        appendToEl: fullscreenAPI ? pswpContainer : document.body,
+                        showAnimationDuration: 0,
+                        hideAnimationDuration: 0,
+                        preloadFirstSlide: true,
+                        preload: [1, 4],
+                        loop: false
+                    });
+                    lightbox.on('close', () => {
+                        pswpContainer.style.display = 'none';
+                        if (fullscreenAPI && fullscreenAPI.isFullscreen()) {
+                            fullscreenAPI.exit();
+                        }
                     });
                     lightbox.init();
+
+                    function getFullscreenAPI() {
+                        let api;
+                        let enterFS;
+                        let exitFS;
+                        let elementFS;
+                        let changeEvent;
+                        let errorEvent;
+
+                        if (document.documentElement.requestFullscreen) {
+                            enterFS = 'requestFullscreen';
+                            exitFS = 'exitFullscreen';
+                            elementFS = 'fullscreenElement';
+                            changeEvent = 'fullscreenchange';
+                            errorEvent = 'fullscreenerror';
+                        } else if (document.documentElement.webkitRequestFullscreen) {
+                            enterFS = 'webkitRequestFullscreen';
+                            exitFS = 'webkitExitFullscreen';
+                            elementFS = 'webkitFullscreenElement';
+                            changeEvent = 'webkitfullscreenchange';
+                            errorEvent = 'webkitfullscreenerror';
+                        }
+
+                        if (enterFS) {
+                            api = {
+                                request: function (el) {
+                                    if (enterFS === 'webkitRequestFullscreen') {
+                                        el[enterFS](Element.ALLOW_KEYBOARD_INPUT);
+                                    } else {
+                                        el[enterFS]();
+                                    }
+                                },
+
+                                exit: function () {
+                                    return document[exitFS]();
+                                },
+
+                                isFullscreen: function () {
+                                    return document[elementFS];
+                                },
+
+                                change: changeEvent,
+                                error: errorEvent
+                            };
+                        }
+
+                        return api;
+                    };
+
+                    function getContainer() {
+                        const pswpContainer = document.createElement('div');
+                        pswpContainer.style.background = '#000';
+                        pswpContainer.style.width = '100%';
+                        pswpContainer.style.height = '100%';
+                        pswpContainer.style.display = 'none';
+                        document.body.appendChild(pswpContainer);
+                        return pswpContainer;
+                    }
                 </script>
                 <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
@@ -64,9 +153,9 @@ layout: default
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
-                            <img src="{{ url }}" alt="" />
+                            <img style="display:inline-block;margin-bottom: 4px"
+                                src="{{ page.thumbnails[forloop.index0] }}" alt="" />
                         </a>
-                        <br />
                         {% endfor %}
                     </div>
                 </div>
@@ -97,7 +186,8 @@ layout: default
                 </div>
                 <!-- 分享功能 end -->
                 <ul class="pager">
-                    {% if page.previous.url %}
+                    {% if page.previous.url and (page.previous.display or page.previous.display == "" or
+                    page.previous.display == nil)%}
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
                             data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous
