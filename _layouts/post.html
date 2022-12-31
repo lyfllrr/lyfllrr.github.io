@@ -76,7 +76,7 @@ layout: default
                         showAnimationDuration: 0,
                         hideAnimationDuration: 0,
                         preloadFirstSlide: true,
-                        preload: [1, 4],
+                        preload: [1, 8],
                         loop: false
                     });
                     lightbox.on('close', () => {
@@ -153,11 +153,23 @@ layout: default
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
-                            <img style="display:inline-block;margin-bottom: 4px"
-                                src="{{ page.thumbnails[forloop.index0] }}" alt="" />
+                            <img id="img{{ forloop.index0 }}"
+                                style="object-fit: cover;width:101px;height:101px;display:inline-block;margin-bottom: 4px"
+                                data-src="{{ page.thumbnails[forloop.index0] }}" alt="" />
                         </a>
                         {% endfor %}
                     </div>
+                    <!-- 顺序加载thumbnail脚本 start -->
+                    <script>
+                        function loadImage(counter) {
+                            if (counter >= '{{ page.imgUrls.size }}') { return; }
+                            var img = document.getElementById("img" + counter);
+                            img.onload = img.onerror = function () { loadImage(counter + 1); }
+                            img.src = img.dataset.src;
+                        }
+                        loadImage(0);
+                    </script>
+                    <!-- 顺序加载thumbnail脚本 end -->
                 </div>
                 <!-- PhotoSwipe框架调用 end -->
                 <!-- 图片之后如果有正文会出现在这里 -->
@@ -207,8 +219,8 @@ layout: default
                 <div id="disqus_thread"></div>
                 <script>
                     var disqus_config = function () {
-                        this.page.url = site.url + page.url
-                        this.page.identifier = page.id
+                        this.page.url = '{{ site.url }}{{ page.url }}'
+                        this.page.identifier = '{{ page.id }}'
                     };
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document, s = d.createElement('script');

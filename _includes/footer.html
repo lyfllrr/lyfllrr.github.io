@@ -6,7 +6,7 @@
                 <ul class="list-inline text-center">
                     <!-- kill the Facebook and Weibo -->
                     <li>
-                        <a href="{{ " /feed.xml" | prepend: site.baseurl }}">
+                        <a href="/feed.xml">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -34,20 +34,6 @@
                         </a>
                     </li>
                     {% endif %}
-
-                    <!--
-                    {% if site.douban_username %}
-                    <li>
-                        <a href="http://www.douban.com/people/{{ site.douban_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-douban fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    -->
-
                     <!--
                     {% if site.facebook_username %}
                     <li>
@@ -60,17 +46,6 @@
                     </li>
                     {% endif %}
                     -->
-
-                    {% if site.zhihu_username %}
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
                     <!--
                     {% if site.weibo_username %}
                     <li>
@@ -93,14 +68,11 @@
     </div>
 </footer>
 
-<!-- jQuery -->
-<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ " /js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="/js/clean-blog.min.js"></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW2PL3GXVR"></script>
