@@ -1,6 +1,6 @@
 ---
 layout: post
-headerStyle: rgb(33,33,33)
+headerStyle:
 title: 丰乳肥臀的淫乱妈妈第五章
 header-img: https://images4.imagebam.com/4b/be/b4/MEHSFTQ_o.jpg
 subtitle: 难以自持的欲望，失守在即的花房
