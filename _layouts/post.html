@@ -153,7 +153,7 @@ layout: default
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
-                            <img id="img{{ forloop.index0 }}"
+                            <img id="img{{ forloop.index0 }}" loading="lazy"
                                 style="object-fit: cover;width:101px;height:101px;display:inline-block;margin-bottom: 4px"
                                 data-src="{{ page.thumbnails[forloop.index0] }}" alt="" />
                         </a>
