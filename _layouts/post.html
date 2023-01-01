@@ -213,25 +213,27 @@ layout: default
                     {% endif %}
                 </ul>
 
-                <!-- disqus评论框 start -->
+                <!-- LiveRe评论框 start -->
                 {% if page.comments or page.comments == "" or page.comments == nil %}
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_config = function () {
-                        this.page.url = '{{ site.url }}{{ page.url }}'
-                        this.page.identifier = '{{ page.id }}'
-                    };
-                    (function () { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://weloventr4ever.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>你需要打开浏览器的JS功能以查看<a href="https://disqus.com/?ref_noscript">评论</a>。</noscript>
+
+                <div id="lv-container" data-id="city" data-uid="MTAyMC81Nzg1Mi8zNDMxNQ==">
+                    <script type="text/javascript">
+                        (function (d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript>你需要打开浏览器的JS功能以查看评论</noscript>
+                </div>
                 {% endif %}
-                <script id="dsq-count-scr" src="//weloventr4ever.disqus.com/count.js" async></script>
-                <!-- disqus评论框 end -->
+                <!-- LiveRe评论框 end -->
             </div>
         </div>
     </div>

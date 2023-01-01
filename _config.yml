@@ -35,12 +35,6 @@ defaults:
       author: "NTR中毒患者" # 你的名字
       header-img: "/img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
-# Comments
-comments:
-  provider: disqus # 使用 disqus 评论模块，读者翻墙才能看见
-  disqus:
-    short_name: disqus_vX4j3IrQ0V # 填写你的 disqus id
-
 # Plugin
 plugins:
   - jekyll-feed
