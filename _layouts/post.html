@@ -43,6 +43,10 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+                {% if page.thumbnails %}
+                <i style="color:rgb(100, 100, 100)">手机端可以滑动翻页，PC端除了左右方向键翻页，空格键也可以看下一页哦</i>
+                <br /><br />
+                {% endif %}
                 <p>{{ page.description }}</p>
                 <!-- PhotoSwipe框架调用 start-->
                 <script type="module">
