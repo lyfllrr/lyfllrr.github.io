@@ -32,6 +32,7 @@ imgUrls:
 - [ ] 12. 应用美化插件 -> 也许会采用 NEXT?尚未决定
 - [ ] 13. 更新邮箱推送系统 -> 或许会需要独立后端
 - [ ] 14. SSO 登陆系统 -> twitter/QQ/微信/Google 都可以，可与邮箱系统联动
+- [ ] 15. 漫画内容建立 github project 进行管理，CI/CD 脚本实现对 main branch 的新增内容上传至云端（AWS S3？）、获取链接并基于 Github Pages 自动发帖 <-commit 到 github 的图片应该无法直接使用，会被墙
 
 ### Bug
 
