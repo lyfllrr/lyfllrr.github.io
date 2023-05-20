@@ -5,7 +5,7 @@ layout: default
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header {
-        background-image: url('{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
+        background-image: url('{% if page.header-img %}https://d3i33ap8n3le07.cloudfront.net/{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
     }
 </style>
 <header class="intro-header">
@@ -43,7 +43,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
-                {% if page.thumbnails %}
+                {% if page.imgUrls %}
                 <i style="color:rgb(100, 100, 100)">手机端可以滑动翻页，PC端除了左右方向键翻页，空格键也可以看下一页哦</i>
                 <br /><br />
                 {% endif %}
@@ -153,13 +153,13 @@ layout: default
                 <div id="app">
                     <div class="pswp-gallery" id="my-gallery">
                         {% for url in page.imgUrls %}
-                        <a href="{{ url }}"
+                        <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}"
                             data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                             data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                             target="_blank">
                             <img id="img{{ forloop.index0 }}" loading="lazy"
-                                style="object-fit: cover;width:101px;height:101px;display:inline-block;margin-bottom: 4px"
-                                data-src="{{ page.thumbnails[forloop.index0] }}" alt="" />
+                                style="object-fit: cover;width:100px;height:100px;display:inline-block;margin-bottom: 4px"
+                                data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
                         </a>
                         {% endfor %}
                     </div>
