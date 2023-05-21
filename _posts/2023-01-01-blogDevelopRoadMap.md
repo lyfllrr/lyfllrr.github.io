@@ -9,7 +9,6 @@ categories: blog
 isOriginalArtwork: false
 tags: [SFW]
 description:
-thumbnails:
 imgWidth:
 imgHeight:
 imgUrls:
