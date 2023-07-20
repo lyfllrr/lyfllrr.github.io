@@ -81,7 +81,10 @@ layout: default
                         hideAnimationDuration: 0,
                         preloadFirstSlide: true,
                         preload: [1, 8],
-                        loop: false
+                        loop: false,
+                        initialZoomLevel: 'fit',
+                        secondaryZoomLevel: 'fit',
+                        maxZoomLevel: '2'
                     });
                     lightbox.on('close', () => {
                         pswpContainer.style.display = 'none';
@@ -148,6 +151,13 @@ layout: default
                         document.body.appendChild(pswpContainer);
                         return pswpContainer;
                     }
+
+                    function fullscreenchanged(event) {
+                        if (!document.fullscreenElement) {
+                            lightbox.pswp['close']();
+                        }
+                    }
+                    document.onfullscreenchange = fullscreenchanged;
                 </script>
                 <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
