@@ -15,6 +15,7 @@ styleElement.textContent = `
   .slideshow-container img.active {
     display: block;
   }
+
   ul.slideshow-container {
     width: 12px;
     height: 12px;
@@ -37,6 +38,7 @@ styleElement.textContent = `
   summary {
     font-weight: bold;
     cursor: pointer;
+
   }
 `;
 document.head.appendChild(styleElement);
