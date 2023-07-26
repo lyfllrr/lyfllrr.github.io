@@ -15,38 +15,28 @@ styleElement.textContent = `
   .slideshow-container img.active {
     display: block;
   }
-
-  .progress-bar {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .progress-dot {
+  ul.slideshow-container {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
     background-color: gray;
     margin: 0 5px;
-    cursor: pointer;
-    position: relative;
   }
 
-  .progress-dot.active {
+  ul.slideshow-container {
     background-color: #007bff;
   }
 
-  /* Adjusted the positioning of the progress dot's pseudo-element */
-  .progress-dot.active::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #fff;
+  details {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
   }
 `;
 document.head.appendChild(styleElement);
@@ -82,6 +72,7 @@ function createSlideshowForItem(ulElement) {
         }
         if (recommendUrl) {
           const a = document.createElement('a');
+          a.setAttribute("target","_blank");
           a.href = recommendUrl;
           a.appendChild(img);
           imgContainer.appendChild(a);
@@ -94,41 +85,18 @@ function createSlideshowForItem(ulElement) {
       // Add the slideshow div inside the <ul> element
       ulElement.appendChild(slideshowDiv);
 
-      const progressDiv = document.createElement('div');
-      progressDiv.classList.add('progress-bar');
-
-      images.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('progress-dot');
-        if (index === 0) {
-          dot.classList.add('active');
-        }
-        dot.addEventListener('click', () => {
-          slideIndex = index;
-          showSlide();
-        });
-        progressDiv.appendChild(dot);
-      });
-
-      ulElement.appendChild(progressDiv);
-
       const showSlide = () => {
         const slides = slideshowDiv.getElementsByTagName('img');
-        const dots = progressDiv.getElementsByClassName('progress-dot');
         for (const slide of slides) {
           slide.classList.remove('active');
         }
-        for (const dot of dots) {
-          dot.classList.remove('active');
-        }
         slides[slideIndex].classList.add('active');
-        dots[slideIndex].classList.add('active');
       };
 
       const showSlides = () => {
         slideIndex = (slideIndex + 1) % images.length;
         showSlide();
-        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
       };
 
       showSlides();
@@ -136,9 +104,28 @@ function createSlideshowForItem(ulElement) {
   }
 
   function createSlideshows() {
-    const ulElements = document.getElementsByTagName('ul');
+    const container = document.getElementById('recommendlist');
+    const ulElements = container.parentElement.parentElement.querySelectorAll('ul');
     for (const ul of ulElements) {
-      createSlideshowForItem(ul);
+      const firstLi = ul.querySelector('li'); // Get the first <li> element
+      if (firstLi) {
+        // Create a <details> element
+        const details = document.createElement('details');
+
+        // Use the text content of the first <li> as <summary> text
+        const summary = document.createElement('summary');
+        summary.textContent = firstLi.textContent.split("\n")[0];
+        details.appendChild(summary);
+
+        // Insert the <details> before the original <ul>
+        ul.parentNode.insertBefore(details, ul);
+
+        // Move the <ul> inside the <details>
+        details.appendChild(ul);
+
+        // Create the slideshow inside the <details>
+        createSlideshowForItem(ul);
+      }
     }
   }
 
