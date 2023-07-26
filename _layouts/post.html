@@ -219,23 +219,25 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-
+                <!-- DLsite 广告-->
+                <script type="text/javascript">blogparts = { "id": "12587", "ssl": "1" }</script>
+                <script type="text/javascript" src="https://www.dlsite.com/js/blogparts.js" charset="UTF-8"></script>
                 <!-- LiveRe评论框 start -->
                 {% if page.comments or page.comments == "" or page.comments == nil %}
 
                 <div id="lv-container" data-id="city" data-uid="MTAyMC81Nzg1Mi8zNDMxNQ==">
                     <script type="text/javascript">
-                        (function (d, s) {
-                            var j, e = d.getElementsByTagName(s)[0];
+                            (function (d, s) {
+                                var j, e = d.getElementsByTagName(s)[0];
 
-                            if (typeof LivereTower === 'function') { return; }
+                                if (typeof LivereTower === 'function') { return; }
 
-                            j = d.createElement(s);
-                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                            j.async = true;
+                                j = d.createElement(s);
+                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                                j.async = true;
 
-                            e.parentNode.insertBefore(j, e);
-                        })(document, 'script');
+                                e.parentNode.insertBefore(j, e);
+                            })(document, 'script');
                     </script>
                     <noscript>你需要打开浏览器的JS功能以查看评论</noscript>
                 </div>

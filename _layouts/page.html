@@ -3,12 +3,14 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header"
+    style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1 style="color:#333333">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <h1 style="color:#333333">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+                    </h1>
                     <hr class="small" style="color:#333333">
                     <span class="subheading" style="color:#333333">{{ page.description }}</span>
                 </div>
@@ -17,20 +19,23 @@ layout: default
     </div>
 </header>
 
-<link rel="stylesheet" href="/css/backtop.css">  <!-- Back Top -->
-<script type="text/javascript" src="/js/backtop.js"></script>  <!-- Back Top -->
+<link rel="stylesheet" href="/css/backtop.css"> <!-- Back Top -->
+<script type="text/javascript" src="/js/backtop.js"></script> <!-- Back Top -->
 
 <div id="back-top">
-  <a href="#top" title="回到顶部"></a>
+    <a href="#top" title="回到顶部"></a>
 </div>
 
 <!-- Main Content -->
 <div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ content }}
+            <!--DLsite 广告-->
+            <script type="text/javascript">blogparts = { "id": "12588", "ssl": "1" }</script>
+            <script type="text/javascript" src="https://www.dlsite.com/js/blogparts.js" charset="UTF-8"></script>
+        </div>
+    </div>
 </div>
 
 <hr>
