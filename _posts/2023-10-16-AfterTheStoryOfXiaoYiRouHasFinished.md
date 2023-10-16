@@ -49,7 +49,7 @@ author: 中毒患者
 
 想一想，愿意打赏这么变态的作者的读者，肯定也都是群色鬼。其中有几个人喜欢把漫画原图用于桌面背景（像下面这样），也并不是什么奇怪的事。
 
-![我的桌面](https:/d3i33ap8n3le07.cloudfront.net/2023-10-16-AfterTheStoryOfXiaoYiRouHasFinished/myDesktopCapture.jpg)
+![我的桌面](https://d3i33ap8n3le07.cloudfront.net/2023-10-16-AfterTheStoryOfXiaoYiRouHasFinished/myDesktopCapture.jpg)
 
 对，一切都合理起来了！（并没有）
 
