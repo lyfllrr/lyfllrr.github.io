@@ -9,7 +9,7 @@
                         <a href="/feed.xml">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-solid fa-rss fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -18,7 +18,7 @@
                         <a href="https://twitter.com/{{ site.twitter_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-brands fa-x-twitter fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -29,23 +29,23 @@
                         <a href="https://www.pixiv.net/users/{{ site.pixiv_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-solid fa-p fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     {% endif %}
-                    <!--
-                    {% if site.facebook_username %}
+                    
+                    {% if site.gumroad_username %}
                     <li>
-                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                        <a href="https://{{ site.gumroad_username }}.gumroad.com/">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-solid fa-dollar-sign fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     {% endif %}
-                    -->
+                    
                     <!--
                     {% if site.weibo_username %}
                     <li>
@@ -67,6 +67,9 @@
         </div>
     </div>
 </footer>
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/c26955a843.js" crossorigin="anonymous"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap.min.js"></script>
