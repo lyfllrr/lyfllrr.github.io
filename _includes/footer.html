@@ -1,48 +1,42 @@
 <!-- Footer -->
 <footer>
+    <style>
+        .otherSiteIcon {
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            filter: contrast(0);
+            padding: 5px;
+            transition:0.5s;
+        } 
+        .otherSiteIcon:hover {
+            padding: 0px;
+            filter: contrast(1);
+            transition:0.5s;
+        }
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    <!-- kill the Facebook and Weibo -->
                     <li>
-                        <a href="/feed.xml">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-solid fa-rss fa-inverse"></i>
-                            </span>
-                        </a>
+                        <img class="otherSiteIcon" src="/img/feed.ico" onclick="window.open('/feed.xml', '_blank');"/>
                     </li>
                     {% if site.twitter_username %}
                     <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-brands fa-x-twitter fa-inverse"></i>
-                            </span>
-                        </a>
+                        <img class="otherSiteIcon" src="/img/x.ico" onclick="window.open('https://x.com/{{ site.twitter_username }}', '_blank');"/>
                     </li>
                     {% endif %}
 
                     {% if site.pixiv_username %}
                     <li>
-                        <a href="https://www.pixiv.net/users/{{ site.pixiv_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-solid fa-p fa-inverse"></i>
-                            </span>
-                        </a>
+                        <img class="otherSiteIcon" src="/img/pixiv.ico" onclick="window.open('https://www.pixiv.net/users/{{ site.pixiv_username }}', '_blank');"/>
                     </li>
                     {% endif %}
                     
                     {% if site.gumroad_username %}
                     <li>
-                        <a href="https://{{ site.gumroad_username }}.gumroad.com/">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-solid fa-dollar-sign fa-inverse"></i>
-                            </span>
-                        </a>
+                        <img class="otherSiteIcon" src="/img/gumroad.ico" onclick="window.open('https://{{ site.gumroad_username }}.gumroad.com', '_blank');"/>
                     </li>
                     {% endif %}
                     
@@ -67,9 +61,6 @@
         </div>
     </div>
 </footer>
-
-<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/c26955a843.js" crossorigin="anonymous"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap.min.js"></script>
