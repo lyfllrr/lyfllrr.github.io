@@ -1,42 +1,27 @@
 <!-- Footer -->
 <footer>
-    <style>
-        .otherSiteIcon {
-            width: 55px;
-            height: 55px;
-            cursor: pointer;
-            filter: contrast(0);
-            padding: 5px;
-            transition:0.5s;
-        } 
-        .otherSiteIcon:hover {
-            padding: 0px;
-            filter: contrast(1);
-            transition:0.5s;
-        }
-    </style>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
-                        <img class="otherSiteIcon" src="/img/feed.ico" onclick="window.open('/feed.xml', '_blank');"/>
+                        <img class="otherSiteIcon" alt="feed订阅" src="/img/feed.ico" onclick="window.open('/feed.xml', '_blank');"/>
                     </li>
                     {% if site.twitter_username %}
                     <li>
-                        <img class="otherSiteIcon" src="/img/x.ico" onclick="window.open('https://x.com/{{ site.twitter_username }}', '_blank');"/>
+                        <img class="otherSiteIcon" alt="Twitter主页" src="/img/x.ico" onclick="window.open('https://x.com/{{ site.twitter_username }}', '_blank');"/>
                     </li>
                     {% endif %}
 
                     {% if site.pixiv_username %}
                     <li>
-                        <img class="otherSiteIcon" src="/img/pixiv.ico" onclick="window.open('https://www.pixiv.net/users/{{ site.pixiv_username }}', '_blank');"/>
+                        <img class="otherSiteIcon" alt="pixiv主页" src="/img/pixiv.ico" onclick="window.open('https://www.pixiv.net/users/{{ site.pixiv_username }}', '_blank');"/>
                     </li>
                     {% endif %}
                     
                     {% if site.gumroad_username %}
                     <li>
-                        <img class="otherSiteIcon" src="/img/gumroad.ico" onclick="window.open('https://{{ site.gumroad_username }}.gumroad.com', '_blank');"/>
+                        <img class="otherSiteIcon gumroadIcon" alt="赞助网站Gumroad" src="/img/gumroad-gray.ico" onclick="window.open('https://{{ site.gumroad_username }}.gumroad.com', '_blank');"/>
                     </li>
                     {% endif %}
                     

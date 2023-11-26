@@ -30,7 +30,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #pink;
 }
 a img:hover,
 a img:focus {
@@ -132,20 +132,10 @@ hr.small {
     font-size: 20px;
   }
   .navbar-custom .navbar-brand {
-    color: white;
     padding: 20px;
-  }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
     padding: 20px;
-  }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -177,14 +167,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #pink;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #pink;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -216,7 +206,6 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -306,22 +295,6 @@ hr.small {
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview > .post-meta {
-  font-family: 'Lora', 'Times New Roman', serif;
-  color: #808080;
-  font-size: 16px;
-  font-style: italic;
-  margin-top: 0;
-}
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #404040;
-}
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  color: #2B4180;
-  text-decoration: underline;
-}
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 26px;
@@ -337,11 +310,6 @@ hr.small {
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: normal;
-  color: #a3a3a3;
-}
-.post-content-preview:hover {
-  color: #46A5ED;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
@@ -449,8 +417,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #pink;
+  border: 1px solid #pink;
   color: white;
 }
 .pager {
@@ -481,8 +449,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #00c9d7;
-  border: 1px solid #00c9d7;
+  background-color: pink;
+  border: 1px solid pink;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -495,12 +463,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #00c9d7;
+  background: pink;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #00c9d7;
+  background: pink;
 }
 img::selection {
   color: white;
@@ -511,7 +479,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #00c9d7;
+  webkit-tap-highlight-color: pink;
 }
 
 
