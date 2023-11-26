@@ -1,6 +1,5 @@
 ---
 layout: post
-headerStyle:
 title: 将图床切换至AWS S3以及设置CDN、防盗链、生成缩略图的过程
 header-img: 2023-05-21-HowDoITransferImagesToAWSS3/%E9%A2%98%E5%9B%BE.jpg
 subtitle: “嗨，第三方图床终究靠不住，还是得自己来”

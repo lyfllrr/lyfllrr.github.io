@@ -1,6 +1,5 @@
 ---
 layout: post
-headerStyle:
 title: 关于作品的一些简单说明，以及未来的一些计划
 header-img: 2023-05-24-SomePlanInFutureOfMyManga/%E9%A2%98%E5%9B%BE.jpg
 subtitle: 这漫画我怕是要做一辈子

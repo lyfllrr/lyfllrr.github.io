@@ -1,6 +1,5 @@
 ---
 layout: post
-headerStyle:
 title: 写在萧依柔的故事结束之后
 header-img: 2023-10-16-AfterTheStoryOfXiaoYiRouHasFinished/222.1.jpg
 subtitle: 休息了一段时间，接下来要做什么呢
