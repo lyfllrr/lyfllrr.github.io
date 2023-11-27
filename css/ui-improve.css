@@ -24,6 +24,12 @@
     text-shadow: 1px 1px 2px pink;
     user-select: none;
 }
+.intro-header .site-heading h1 {
+    font-size: min(70px,10vw);
+}
+.intro-header .site-heading .subheading {
+    font-size: min(20px,4vw);
+}
 
 /* 文章标题 */
 .intro-header .post-heading,
