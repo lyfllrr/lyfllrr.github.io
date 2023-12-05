@@ -70,7 +70,7 @@ layout: default
                             fullscreenAPI.request(pswpContainer);
                         });
                     }
-
+                    
                     const lightbox = new PhotoSwipeLightbox({
                         gallery: '#my-gallery',
                         children: 'a',
@@ -83,8 +83,9 @@ layout: default
                         preload: [1, 8],
                         loop: false,
                         initialZoomLevel: 'fit',
-                        secondaryZoomLevel: 'fit',
-                        maxZoomLevel: '2'
+                        imageClickAction: 'next',
+                        tapAction: 'next',
+                        maxZoomLevel: '1'
                     });
                     lightbox.on('close', () => {
                         pswpContainer.style.display = 'none';
