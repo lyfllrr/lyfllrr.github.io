@@ -174,14 +174,13 @@ layout: default
                         </div>
                         {% for url in page.imgUrls %}
                         <div class="mangaBlocks">
-                            <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}"
+                            <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}" class="mangaLinks"
                                 data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
                                 data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
                                 target="_blank">
                                 <img class="mangaThumbnails" id="img{{ forloop.index0 }}" loading="lazy"
                                     data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
-                                
-                                <!-- <div class="pageNumber">P{{ forloop.index0 }}</div> -->
+                                <div class="pageNumber">P{{ forloop.index0 }}</div>
                             </a>
                         </div>
                         {% endfor %}
@@ -191,8 +190,8 @@ layout: default
                         function loadImage(counter) {
                             if (counter >= '{{ page.imgUrls.size }}') { return; }
                             var img = document.getElementById("img" + counter);
-                            img.onload = img.onerror = function () { loadImage(counter + 1); }
                             img.src = img.dataset.src;
+                            loadImage(counter + 1)
                         }
                         loadImage(0);
                     </script>

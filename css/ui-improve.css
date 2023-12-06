@@ -102,6 +102,10 @@
     cursor: pointer;
 }
 
+.mangaLinks {
+    position:relative;
+}
+
 /* 漫画插件：缩略图 */
 .mangaThumbnails {
     object-fit: cover;
@@ -113,29 +117,28 @@
     cursor: pointer;
 }
 
-/* 漫画插件：页码显示 
-.mangaThumbnails:hover {
-    filter: brightness(50%);
-    transition:0.5s;
+/* 漫画插件：页码显示 */
+.mangaLinks:hover .mangaThumbnails{
+    filter:brightness(50%);
+    transition:0.3s;
 }
     
 .pageNumber {
-    position:relative;
-    top: -25%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    display: block;
-    text-align: center;
+    transform:translate(-50%,-50%);
+    display: none;
+    color:white;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size:400%;
-    color: black;
+    font-size:3em;
     text-decoration:none;
-
 }
 
-.mangaThumbnails:hover+.pageNumber{
+.mangaLinks:hover .pageNumber {
     display: block;
-} */
+} 
 
 /* 漫画插件：首格方向指示 */
 #directionGuider {
@@ -146,5 +149,5 @@
     display: inline-block;
     text-align: center;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size:max(20px,1.5vw)
+    font-size:max(20px,1.5em)
 }
