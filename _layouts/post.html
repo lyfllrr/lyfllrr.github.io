@@ -162,16 +162,28 @@ layout: default
                 </script>
                 <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
-                    <div class="pswp-gallery" id="my-gallery">
+                    <div class="pswp-gallery mangaGallery" id="my-gallery" {% if page.readFromRight %}style="flex-direction: row-reverse;"{% endif %}>
+                        <div class="mangaBlocks" >
+                            <div id="directionGuider">阅读方向
+                                <br/>
+                                {% if page.readFromRight %}
+                                ←
+                                {% else %}
+                                →
+                                {% endif %}
+                            </div> 
+                        </div>
                         {% for url in page.imgUrls %}
-                        <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}"
-                            data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
-                            data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
-                            target="_blank">
-                            <img id="img{{ forloop.index0 }}" loading="lazy"
-                                style="object-fit: cover;width:100px;height:100px;display:inline-block;margin-bottom: 4px"
-                                data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
-                        </a>
+                        <div class="mangaBlocks">
+                            <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}" class="mangaLinks"
+                                data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
+                                data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
+                                target="_blank">
+                                <img class="mangaThumbnails" id="img{{ forloop.index0 }}" loading="lazy"
+                                    data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
+                                <div class="pageNumber">P{{ forloop.index0 }}</div>
+                            </a>
+                        </div>
                         {% endfor %}
                     </div>
                     <!-- 顺序加载thumbnail脚本 start -->
@@ -179,8 +191,8 @@ layout: default
                         function loadImage(counter) {
                             if (counter >= '{{ page.imgUrls.size }}') { return; }
                             var img = document.getElementById("img" + counter);
-                            img.onload = img.onerror = function () { loadImage(counter + 1); }
                             img.src = img.dataset.src;
+                            loadImage(counter + 1)
                         }
                         loadImage(0);
                     </script>
