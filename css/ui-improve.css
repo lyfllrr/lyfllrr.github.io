@@ -100,9 +100,7 @@
     min-width: 100px;
     margin: 0.7%;
     cursor: pointer;
-}
-
-.mangaLinks {
+    
     position:relative;
 }
 
@@ -118,7 +116,7 @@
 }
 
 /* 漫画插件：页码显示 */
-.mangaLinks:hover .mangaThumbnails{
+.mangaBlocks:hover .mangaThumbnails{
     filter:brightness(50%);
     transition:0.3s;
 }
@@ -136,7 +134,7 @@
     text-decoration:none;
 }
 
-.mangaLinks:hover .pageNumber {
+.mangaBlocks:hover .pageNumber {
     display: block;
 } 
 
