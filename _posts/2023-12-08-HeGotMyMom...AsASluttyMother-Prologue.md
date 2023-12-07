@@ -5,6 +5,7 @@ header-img: 2023-12-08-HeGotMyMom...AsASluttyMother-Prologue/xiaoyuner-xuzhang.j
 subtitle:
 date: 2023-12-08
 categories: blog
+readfromright: true
 isOriginalArtwork: true
 tags: [妈妈…变成了同学的淫母, 萧韵儿, 萧媚儿, 绿母]
 description:
@@ -12,8 +13,6 @@ description:
   多年相依为命对母亲萌生淫欲的儿子<br>
   以及……新的学校里，即将相识的同学<br>
   他们三人，会发生怎样的故事呢？<br>
-imgWidth: 4299
-imgHeight: 6071
 imgUrls:
   [
 2023-12-08-HeGotMyMom...AsASluttyMother-Prologue/000cover.jpg,
