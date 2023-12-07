@@ -79,13 +79,15 @@ layout: default
                         appendToEl: fullscreenAPI ? pswpContainer : document.body,
                         showAnimationDuration: 0,
                         hideAnimationDuration: 0,
+                        zoom: false,
                         preloadFirstSlide: true,
-                        preload: [1, 8],
+                        preload: [1, 5],
                         loop: false,
                         initialZoomLevel: 'fit',
+                        secondaryZoomLevel: 'fit',
                         imageClickAction: 'next',
                         tapAction: 'next',
-                        maxZoomLevel: '1'
+                        maxZoomLevel: 'fit'
                     });
                     lightbox.on('close', () => {
                         pswpContainer.style.display = 'none';
@@ -162,15 +164,22 @@ layout: default
                 </script>
                 <link rel="stylesheet" href="/dist/photoswipe.css">
                 <div id="app">
-                    <div class="pswp-gallery" id="my-gallery">
+                    <div class="pswp-gallery mangaGallery" id="my-gallery" readFromRight="{{ page.readFromRight }}"">
+                        <!-- <div class="mangaBlocks" >
+                            <div id="directionGuider">阅读方向
+                                <br/>
+                                {% if page.readFromRight %}
+                                ←
+                                {% else %}
+                                →
+                                {% endif %}
+                            </div> 
+                        </div> -->
                         {% for url in page.imgUrls %}
-                        <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}"
-                            data-pswp-width="{% if page.imgWidth %}{{ page.imgWidth }}{% else %}3840{% endif %}"
-                            data-pswp-height="{% if page.imgHeight %}{{ page.imgHeight }}{% else %}2160{% endif %}"
-                            target="_blank">
-                            <img id="img{{ forloop.index0 }}" loading="lazy"
-                                style="object-fit: cover;width:100px;height:100px;display:inline-block;margin-bottom: 4px"
+                        <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}" class="mangaBlocks" data-pswp-width data-pswp-height target="_blank">
+                            <img class="mangaThumbnails" id="img{{ forloop.index0 }}" loading="lazy"
                                 data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
+                            <div class="pageNumber">P{{ forloop.index }}</div>
                         </a>
                         {% endfor %}
                     </div>
@@ -179,8 +188,8 @@ layout: default
                         function loadImage(counter) {
                             if (counter >= '{{ page.imgUrls.size }}') { return; }
                             var img = document.getElementById("img" + counter);
-                            img.onload = img.onerror = function () { loadImage(counter + 1); }
                             img.src = img.dataset.src;
+                            loadImage(counter + 1)
                         }
                         loadImage(0);
                     </script>
