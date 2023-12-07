@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的美腿女友和她的内向表弟 第二章
-header-img: 2023-07-21-MySexyGirlFriendAndHerIntrovertedCousin-Chapter.2/30.1.jpg
+header-img: 2023-07-21-MySexyGirlFriendAndHerIntrovertedCousin-Chapter.2/header.jpg
 subtitle:
 date: 2023-07-21
 categories: blog
