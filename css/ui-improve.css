@@ -47,14 +47,18 @@
 
 /* post一览页面 */
 .post-preview {
+    position: relative;
 }
-.post-preview:hover {
-}
-
-.post-preview > a:hover {
+.post-preview-background-image {
+    filter:blur(3px) brightness(50%);
+    background-size: cover !important; 
+    opacity:0;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    z-index: -1;
     transition:0.5s;
-    color:#757575;
-    text-shadow: 1px 1px 2px pink;
 }
 .post-preview > a > .post-meta {
     font-family: 'Lora', 'Times New Roman', serif;
@@ -66,7 +70,18 @@
 .post-content-preview {
     color:#757575;
     font-style: normal;
-  }
+}
+.post-preview:hover .post-preview-background-image {
+    opacity:1;
+}
+.post-preview:hover a,
+.post-preview:hover .post-meta,
+.post-preview:hover .post-content-preview {
+    transition:0.5s;
+    color:#f0f0f0;
+    text-shadow: 1px 1px 1px rgb(189, 121, 132);
+    z-index: 1;
+}
 
 
 /* 位于页面底部的其他网站链接/图标 */
@@ -110,7 +125,6 @@
     width: 100%;
     min-height: 100px;
 }
-
 .mangaThumbnails:hover {
     cursor: pointer;
 }
@@ -120,7 +134,6 @@
     filter:brightness(50%);
     transition:0.3s;
 }
-    
 .pageNumber {
     position: absolute;
     top: 50%;
@@ -133,12 +146,11 @@
     font-size:3em;
     text-decoration:none;
 }
-
 .mangaBlocks:hover .pageNumber {
     display: block;
 } 
 
-/* 漫画插件：首格方向指示 */
+/* 漫画插件：首格方向指示
 #directionGuider {
     position:relative;
     top: 50%;
@@ -148,4 +160,4 @@
     text-align: center;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size:max(20px,1.5em)
-}
+} */

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 博客开发路线/功能实装清单
-header-img:
+header-img: 2023-01-01-blogDevelopRoadMap/header.png
 subtitle: 关于我做了什么，以及接下来还要做什么
 date: 2023-1-1
 categories: blog

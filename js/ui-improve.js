@@ -13,17 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	//根据首图尺寸设定本篇图片尺寸
 	let mangaBlocks = document.getElementsByClassName("mangaBlocks");
-	let img = new Image();
-	img.src=mangaBlocks[0].href;
-	img.onload =function(){
-		for (let i=0;i<mangaBlocks.length;i++){
-			mangaBlocks[i].setAttribute("data-pswp-width", img.width);
-			mangaBlocks[i].setAttribute("data-pswp-height", img.height);
+	if (mangaBlocks.length>0){	
+		let img = new Image();
+		img.src=mangaBlocks[0].href;
+		img.onload =function(){
+			for (let i=0;i<mangaBlocks.length;i++){
+				mangaBlocks[i].setAttribute("data-pswp-width", img.width);
+				mangaBlocks[i].setAttribute("data-pswp-height", img.height);
+			}
 		}
 	}
-	
-		
-
-
 
 })
