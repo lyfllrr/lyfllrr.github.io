@@ -48,28 +48,45 @@
 /* post一览页面 */
 .post-preview {
     position: relative;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 .post-preview-background-image {
-    filter:blur(3px) brightness(50%);
+    filter:blur(0.2rem) brightness(35%);
     background-size: cover !important; 
     opacity:0;
     position: absolute;
     top: 0;
     bottom:0;
-    width: 100%;
+    width: 96%;
     z-index: -1;
-    transition:0.5s;
+    transition:0.3s;
+}
+.post-preview > a > .post-title {
+    margin-top:1rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+.post-preview > a > .post-subtitle {
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+.post-preview > a > .post-content-preview {
+    color:#757575;
+    font-style: normal;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .post-preview > a > .post-meta {
     font-family: 'Lora', 'Times New Roman', serif;
     color: #808080;
     font-size: 16px;
     font-style: italic;
-    margin-top: 0;
-}
-.post-content-preview {
-    color:#757575;
-    font-style: normal;
+    margin-top:0;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .post-preview:hover .post-preview-background-image {
     opacity:1;
@@ -77,9 +94,9 @@
 .post-preview:hover a,
 .post-preview:hover .post-meta,
 .post-preview:hover .post-content-preview {
-    transition:0.5s;
+    transition:0.3s;
     color:#f0f0f0;
-    text-shadow: 1px 1px 1px rgb(189, 121, 132);
+    text-shadow: 0.1rem 0.1rem 0.3rem #D1255C;
     z-index: 1;
 }
 
@@ -99,7 +116,9 @@
     transition:0.5s;
 }
 .gumroadIcon:hover {
-    content:url(/img/gumroad.ico);
+    background-image: url(/img/gumroad-background.ico);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* 漫画插件部分
