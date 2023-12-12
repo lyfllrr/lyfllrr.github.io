@@ -68,10 +68,12 @@
     margin-top:1rem;
     margin-left: 1rem;
     margin-right:1rem;
+    color:#404040;
 }
 .post-preview > a > .post-subtitle {
     margin-left: 1rem;
     margin-right:1rem;
+    color:#404040;
 }
 .post-preview > a > .post-content-preview {
     color:#757575;
@@ -95,12 +97,14 @@
 .post-preview.active .post-preview-background-image {
     opacity:1;
 }
-.post-preview.hoverable:hover a,
-.post-preview.hoverable:hover .post-meta,
+.post-preview.hoverable:hover .post-title,
+.post-preview.hoverable:hover .post-subtitle,
 .post-preview.hoverable:hover .post-content-preview,
-.post-preview.active a,
-.post-preview.active .post-meta,
-.post-preview.active .post-content-preview {
+.post-preview.hoverable:hover .post-meta,
+.post-preview.active .post-title,
+.post-preview.active .post-subtitle,
+.post-preview.active .post-content-preview,
+.post-preview.active .post-meta {
     transition:0.3s;
     color:#f0f0f0;
     text-shadow: 0.1rem 0.1rem 0.3rem #D1255C;
