@@ -46,18 +46,21 @@
 }
 
 /* post一览页面 */
+.posts {
+    padding-top: 1rem;
+}
 .post-preview {
     position: relative;
-    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 .post-preview-background-image {
     filter:blur(0.2rem) brightness(35%);
     background-size: cover !important; 
     opacity:0;
     position: absolute;
-    top: 0;
+    top: -5%;
     bottom:0;
-    width: 96%;
+    width: 100%;
+    height:110%;
     z-index: -1;
     transition:0.3s;
 }
@@ -88,18 +91,26 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
-.post-preview:hover .post-preview-background-image {
+.post-preview.hoverable:hover .post-preview-background-image,
+.post-preview.active .post-preview-background-image {
     opacity:1;
 }
-.post-preview:hover a,
-.post-preview:hover .post-meta,
-.post-preview:hover .post-content-preview {
+.post-preview.hoverable:hover a,
+.post-preview.hoverable:hover .post-meta,
+.post-preview.hoverable:hover .post-content-preview,
+.post-preview.active a,
+.post-preview.active .post-meta,
+.post-preview.active .post-content-preview {
     transition:0.3s;
     color:#f0f0f0;
     text-shadow: 0.1rem 0.1rem 0.3rem #D1255C;
     z-index: 1;
 }
 
+/* pager */
+.pager {
+    margin:2rem 1rem 2rem;
+}
 
 /* 位于页面底部的其他网站链接/图标 */
 .otherSiteIcon {
