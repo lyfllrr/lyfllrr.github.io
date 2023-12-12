@@ -3,8 +3,9 @@ layout: page
 description: "欢迎光临，准备好交出你的精华了吗？"
 ---
 
+<div class="posts">
 {% for post in paginator.posts %}
-<div class="post-preview">
+<div class="post-preview hoverable">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
@@ -22,9 +23,9 @@ description: "欢迎光临，准备好交出你的精华了吗？"
     </a>
     <div class="post-preview-background-image" style="background-image:url('https://d3i33ap8n3le07.cloudfront.net/{{ post.header-img }}')"></div>
 </div>
-
 <hr>
 {% endfor %}
+</div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
