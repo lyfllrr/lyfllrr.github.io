@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	setImageSize();
 
 	//移动端根据屏幕高度触发hover并禁用默认hover
-	if (document.hasOwnProperty('ontouchstart')) {
-		focusOnCenterDOM();
+	if (isTouchDevice()) {
+		hoverOnCenterDOM();
 		stopDefaultHoverEffect();
 	}
 })
@@ -35,7 +35,11 @@ function setImageSize(){
 	}
 }
 
-function focusOnCenterDOM(){
+function isTouchDevice(){
+	return 'ontouchstart' in window || navigator.maxTouchPoints;
+}
+
+function hoverOnCenterDOM(){
 	let posts = document.querySelectorAll('.post-preview');
 	window.addEventListener('scroll',function(){
 		posts.forEach(function(post){
