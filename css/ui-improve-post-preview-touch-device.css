@@ -27,7 +27,7 @@
     color:#f0f0f0;
     font-size: 2.2rem;
     z-index: 1;
-    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    text-shadow: 0rem 0.2rem 0.3rem #D1255C;
 }
 .post-preview > a > .post-subtitle {
     padding-left: 2rem;
@@ -35,7 +35,7 @@
     color:#f0f0f0;
     font-size: 1.5rem;
     z-index: 1;
-    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    text-shadow: 0rem 0.2rem 0.3rem #D1255C;
 }
 .post-preview > a > .post-content-preview {
     color:#f0f0f0;
@@ -45,7 +45,7 @@
     padding-left: 2rem;
     padding-right:2.5rem;
     z-index: 1;
-    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    text-shadow: 0rem 0.2rem 0.3rem #D1255C;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -65,7 +65,7 @@
     padding-right:2rem;
     padding-bottom: 3.5rem;
     z-index: 1;
-    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    text-shadow: 0rem 0.2rem 0.3rem #D1255C;
 }
 .post-preview+hr{
     margin-top:0.7rem;
