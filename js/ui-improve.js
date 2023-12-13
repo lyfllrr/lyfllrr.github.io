@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	//移动端根据屏幕高度触发hover并禁用默认hover
 	if (isTouchDevice()) {
-		hoverOnCenterDOM();
-		stopDefaultHoverEffect();
+		hoverAtCenterDOM();
+	} else {
+		hoverAtMouse();
 	}
 })
 
@@ -39,23 +40,41 @@ function isTouchDevice(){
 	return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
-function hoverOnCenterDOM(){
+function hoverAtCenterDOM(){
 	let posts = document.querySelectorAll('.post-preview');
 	window.addEventListener('scroll',function(){
 		posts.forEach(function(post){
-			if(	post.getBoundingClientRect().top < window.innerHeight*0.4 && post.nextElementSibling.getBoundingClientRect().bottom >= window.innerHeight*0.4 ){
-				post.classList.add('active');
+			if(	postAtCenter(post) ){
+				hoverOn(post)
 			} else {
-				post.classList.remove('active');
+				hoverOff(post)
 			}	
 		});
 	});
 	
 }
 
-function stopDefaultHoverEffect(){
+function postAtCenter(post){
+	return post.getBoundingClientRect().top < window.innerHeight*0.4 && post.nextElementSibling.getBoundingClientRect().bottom >= window.innerHeight*0.4
+}
+
+function hoverAtMouse(){
 	let posts = document.querySelectorAll('.post-preview');
 	posts.forEach(function(post){
-		post.classList.remove('hoverable');
+		post.addEventListener('mouseenter',(event)=>{
+			hoverOn(post)
+		})
+		post.addEventListener('mouseleave',(event)=>{
+			hoverOff(post)
+		})
 	})
+}
+
+function hoverOn(post){
+	post.classList.add('active');
+	post.classList.remove('inactive');
+}
+
+function hoverOff(post){
+	post.classList.replace('active','inactive');
 }
