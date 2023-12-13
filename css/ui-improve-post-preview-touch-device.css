@@ -5,7 +5,6 @@
 .post-preview {
     position: relative;
     border-radius: 3rem;
-    z-index: -2;
 }
 .post-preview-background-image {
     filter:blur(0.2rem) brightness(70%);
