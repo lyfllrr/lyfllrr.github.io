@@ -72,8 +72,8 @@
     z-index: 1;
     transition:0.3s;
 }
-.post-preview:hover .post-title {
-    padding-top: 10rem;
+.post-preview:hover .post-meta {
+    padding-bottom: 10rem;
     transition:0.3s;
 }
 
