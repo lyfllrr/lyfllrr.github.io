@@ -16,6 +16,7 @@
     height:110%;
     z-index: -1;
     border-radius: 1.5rem;
+    transition:0.3s;
 }
 .post-preview > a > .post-title {
     margin-top: 1rem;
@@ -23,11 +24,13 @@
     padding-left: 2rem;
     padding-right: 2rem;
     color:#404040;
+    transition:0.3s;
 }
 .post-preview > a > .post-subtitle {
     padding-left: 2rem;
     padding-right: 2rem;
     color:#404040;
+    transition:0.3s;
 }
 .post-preview > a > .post-content-preview {
     color:#757575;
@@ -40,7 +43,8 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical; 
+    transition:0.3s; 
 }
 .post-preview > a > .post-meta {
     font-family: 'Lora', 'Times New Roman', serif;
@@ -52,47 +56,24 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom:1.5rem;
+    transition:0.3s;
 }
 
-.post-preview.active .post-preview-background-image {
-    animation: 0.3s forwards hover-on-background-image;
+.post-preview:hover .post-preview-background-image {
+    opacity:1;
+    transition:0.3s;
 }
-.post-preview.active .post-title,
-.post-preview.active .post-subtitle,
-.post-preview.active .post-content-preview,
-.post-preview.active .post-meta {
-    animation: 0.3s forwards hover;
+.post-preview:hover .post-title,
+.post-preview:hover .post-subtitle,
+.post-preview:hover .post-content-preview,
+.post-preview:hover .post-meta {
+    color:#f0f0f0;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    z-index: 1;
+    transition:0.3s;
 }
-.post-preview.inactive .post-preview-background-image {
-    animation: 0.3s forwards hover-off-on-background-image;
+.post-preview:hover .post-title {
+    padding-top: 10rem;
+    transition:0.3s;
 }
-.post-preview.inactive .post-title,
-.post-preview.inactive .post-subtitle,
-.post-preview.inactive .post-content-preview,
-.post-preview.inactive .post-meta {
-    animation: 0.3s forwards hover-off;
-}
-@keyframes hover-on-background-image {
-    to{
-        opacity:1;
-    }
-}
-@keyframes hover-off-on-background-image {
-    from{
-        opacity:1;
-    } 
-}
-@keyframes hover {
-    to{
-        color:#f0f0f0;
-        text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
-        z-index: 1;
-    }
-}
-@keyframes hover-off {
-    from{
-        color:#f0f0f0;
-        text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
-        z-index: 1;
-    }
-}
+
