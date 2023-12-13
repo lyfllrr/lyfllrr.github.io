@@ -118,6 +118,11 @@
     display: block;
 } 
 
+/* 隐藏评论系统广告 */
+.trc-content-sponsored {
+    display: none !important;
+}
+
 /* 漫画插件：首格方向指示
 #directionGuider {
     position:relative;
