@@ -21,17 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function setImageSize(){
-	let mangaBlocks = document.getElementsByClassName('mangaBlocks');
-	if (mangaBlocks.length>0){	
+	let mangaBlocks = document.querySelectorAll('.mangaBlocks');
+	mangaBlocks.forEach(mangaBlock =>{
 		let img = new Image();
-		img.src=mangaBlocks[0].href;
-		img.onload =function(){
+		img.src=mangaBlock.href;
+		img.onload = function(){
 			for (let i=0;i<mangaBlocks.length;i++){
-				mangaBlocks[i].setAttribute('data-pswp-width', img.width);
-				mangaBlocks[i].setAttribute('data-pswp-height', img.height);
+				mangaBlock.setAttribute('data-pswp-width', img.width);
+				mangaBlock.setAttribute('data-pswp-height', img.height);
 			}
 		}
-	}
+	})	
 }
 
 function isTouchDevice(){
