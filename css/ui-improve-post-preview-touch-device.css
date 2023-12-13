@@ -1,0 +1,94 @@
+/* post一览页面 */
+.posts {
+    padding-top: 1rem;
+}
+.post-preview {
+    position: relative;
+    border-radius: 3rem;
+    z-index: -2;
+}
+.post-preview-background-image {
+    filter:blur(0.2rem) brightness(70%);
+    background-size: cover !important; 
+    opacity:1;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    border-radius: 3rem;
+    clip-path:fill-box;
+}
+.post-preview > a > .post-title {
+    margin-top:0;
+    padding-top:3.5rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    color:#f0f0f0;
+    font-size: 2.2rem;
+    z-index: 1;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+}
+.post-preview > a > .post-subtitle {
+    padding-left: 2rem;
+    padding-right:2.5rem;
+    color:#f0f0f0;
+    font-size: 1.5rem;
+    z-index: 1;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+}
+.post-preview > a > .post-content-preview {
+    color:#f0f0f0;
+    font-style: normal;
+    margin-top:0;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    padding-right:2.5rem;
+    z-index: 1;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+}
+.post-preview > a > .post-meta {
+    font-family: 'Lora', 'Times New Roman', serif;
+    color:#f0f0f0;
+    text-align: right;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-bottom: 3.5rem;
+    z-index: 1;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+}
+.post-preview+hr{
+    margin-top:0.7rem;
+    margin-bottom:0.7rem;
+}
+.post-preview.active {
+    animation: 0.3s forwards hover;
+}
+.post-preview.inactive {
+    animation: 0.3s forwards hover-off;
+}
+@keyframes hover {
+    to{
+        transform: translateY(-3px);
+        background-color: #d1255caf;
+        box-shadow: 5px 5px 5px #d1255caf;
+    }
+}
+@keyframes hover-off {
+    from{
+        transform: translateY(-3px);
+        background-color: #d1255caf;
+        box-shadow: 5px 5px 5px #d1255caf;
+    }
+}

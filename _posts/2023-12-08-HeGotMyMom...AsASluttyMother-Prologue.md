@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 妈妈…变成了同学的淫母 序章
+title: 妈妈…变成了同学的淫母
 header-img: 2023-12-08-HeGotMyMom...AsASluttyMother-Prologue/xiaoyuner-xuzhang.jpg
-subtitle:
+subtitle: 序章
 date: 2023-12-08
 categories: blog
 readfromright: true
