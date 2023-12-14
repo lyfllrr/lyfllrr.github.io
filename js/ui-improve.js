@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	//根据首图尺寸设定本篇图片尺寸
 	setImageSize();
 
+	//根据设备加载不同CSS
+	loadCSSByDevice();
+
 	//移动端根据屏幕高度触发hover并禁用默认hover
 	if (isTouchDevice()) {
 		hoverAtCenterDOM();
@@ -63,4 +66,14 @@ function hoverOn(post){
 
 function hoverOff(post){
 	post.classList.replace('active','inactive');
+}
+
+
+function loadCSSByDevice(){
+    let headTag = document.getElementsByTagName('head')[0]
+    const linkforCSSfile = document.createElement("link");
+    linkforCSSfile.href = isTouchDevice() ? '/css/ui-improve-post-preview-touch-device.css' : '/css/ui-improve-post-preview-PC.css'
+    linkforCSSfile.type = 'text/css'
+    linkforCSSfile.rel = 'stylesheet'
+    headTag.appendChild(linkforCSSfile);
 }

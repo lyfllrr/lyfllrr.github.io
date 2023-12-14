@@ -2,20 +2,7 @@
 layout: page
 description: "欢迎光临，准备好交出你的精华了吗？"
 ---
-<script type="text/javascript">
-    window.onload = () => {
-        var headTag = document.getElementsByTagName('head')[0]
-        const linkforCSSfile = document.createElement("link");
-        linkforCSSfile.href = isTouchDevice() ? '/css/ui-improve-post-preview-touch-device.css' : '/css/ui-improve-post-preview-PC.css'
-        linkforCSSfile.type = 'text/css'
-        linkforCSSfile.rel = 'stylesheet'
-        headTag.appendChild(linkforCSSfile);
-        document.body.appendChild(headTag);
-    }
-    function isTouchDevice(){
-	    return 'ontouchstart' in window || navigator.maxTouchPoints;
-    }
-</script>
+
 <div class="posts">
 {% for post in paginator.posts %}
 <div class="post-preview">
