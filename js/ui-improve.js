@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (isTouchDevice()) {
 		hoverAtCenterDOM();
 	} 
+
+	//首次加载时不执行transition效果
+	noTransitionUntilLoaded();
 })
 
 function setImageSize(){
@@ -44,7 +47,7 @@ function isTouchDevice(){
 function hoverAtCenterDOM(){
 	let posts = document.querySelectorAll('.post-preview');
 	window.addEventListener('scroll',function(){
-		posts.forEach(function(post){
+		posts.forEach(post =>{
 			if(	postAtCenter(post) ){
 				hoverOn(post)
 			} else {
@@ -76,4 +79,13 @@ function loadCSSByDevice(){
     linkforCSSfile.type = 'text/css'
     linkforCSSfile.rel = 'stylesheet'
     headTag.appendChild(linkforCSSfile);
+}
+
+function noTransitionUntilLoaded(){
+	window.onload = function(){
+		let transitionDOMs = document.querySelectorAll('.notransition');
+		transitionDOMs.forEach(transitionDOM =>{
+			transitionDOM.classList.remove('notransition');
+		})
+	}
 }
