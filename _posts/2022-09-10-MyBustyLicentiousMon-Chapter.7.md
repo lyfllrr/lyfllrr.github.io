@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 丰乳肥臀的淫乱妈妈第七章
-header-img: 2022-09-10-MyBustyLicentiousMon-Chapter.7/19.jpg
+header-img: 2022-09-10-MyBustyLicentiousMon-Chapter.7/header.jpg
 subtitle: 妈妈的花房，有了新的主人
 date: 2022-9-10
 categories: blog
 isOriginalArtwork: true
 tags: [丰乳肥臀的淫乱妈妈, 萧媚儿, 绿妻, 绿母, 小马开大车]
 description: 自从旅游回来后，妈妈对两人的迷恋似乎越来越强，直到一次契机，两人正式对妈妈提出了一个大胆的要求，而妈妈竟然在简单的迟疑后就迅速接受了。还是说，妈妈原本也早已期盼已久呢？当天，在我的劝说下妈妈终于前去赴约并一夜未归。第二天当我醒来，回来的妈妈仿佛完全变了一个人。更加美丽，更加淫乱，我也……更爱妈妈了
-imgWidth:
-imgHeight:
 imgUrls:
   [
     2022-09-10-MyBustyLicentiousMon-Chapter.7/0.jpg,

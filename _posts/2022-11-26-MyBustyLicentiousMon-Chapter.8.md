@@ -2,7 +2,7 @@
 layout: post
 headerStyle: color:rgb(33,33,33)
 title: 丰乳肥臀的淫乱妈妈第八章
-header-img: 2022-11-26-MyBustyLicentiousMon-Chapter.8/12.jpg
+header-img: 2022-11-26-MyBustyLicentiousMon-Chapter.8/header.jpg
 subtitle: 妈妈终于成为了同学的新娘
 date: 2022-11-26
 categories: blog
@@ -14,8 +14,6 @@ description:
   我和爸爸见证着妈妈被同学雄壮的鸡巴征服，并对着妈妈撸出了被淘汰者的精液。<br>
   这……就是我的淫乱妈妈的故事的结局。<br>
   但也是这位淫乱熟妇的性福生活的开始。<br>
-imgWidth:
-imgHeight:
 imgUrls:
   [
     2022-11-26-MyBustyLicentiousMon-Chapter.8/0.0.0.jpg,
