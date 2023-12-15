@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 写在萧依柔的故事结束之后
-header-img: 2023-10-16-AfterTheStoryOfXiaoYiRouHasFinished/222.1.jpg
+header-img: 2023-10-16-AfterTheStoryOfXiaoYiRouHasFinished/header.jpg
 subtitle: 休息了一段时间，接下来要做什么呢
 date: 2023-10-16
 categories: blog
 isOriginalArtwork: false
 tags: [SFW]
 description:
-imgWidth:
-imgHeight:
 imgUrls:
 author: 中毒患者
 ---

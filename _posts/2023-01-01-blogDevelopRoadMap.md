@@ -8,8 +8,6 @@ categories: blog
 isOriginalArtwork: false
 tags: [SFW]
 description:
-imgWidth:
-imgHeight:
 imgUrls:
 author: 中毒患者
 ---

@@ -13,8 +13,6 @@ description:
   短短几天的相处，不曾想，竟让我觉醒了未曾意识到的性癖，<br>
   也让我第一次获得……从未想过的刺激快感。<br>
   当然，这一切都得从开头说起……<br>
-imgWidth:
-imgHeight:
 imgUrls:
   [
 2023-05-19-MySexyGirlFriendAndHerIntrovertedCousin-Chapter.1/1.1.jpg,
