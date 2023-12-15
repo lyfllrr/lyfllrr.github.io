@@ -1,3 +1,8 @@
+/* 取消初加载时的transition效果 */
+.notransition{
+    transition: none !important;
+}
+
 /* post一览页面 */
 .posts {
     padding-top: 1rem;
@@ -61,7 +66,6 @@
 
 .post-preview:hover .post-preview-background-image {
     opacity:1;
-    transition:0.3s;
 }
 .post-preview:hover .post-title,
 .post-preview:hover .post-subtitle,
@@ -70,10 +74,8 @@
     color:#f0f0f0;
     text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
     z-index: 1;
-    transition:0.3s;
 }
 .post-preview:hover .post-meta {
     padding-bottom: 10rem;
-    transition:0.3s;
 }
 
