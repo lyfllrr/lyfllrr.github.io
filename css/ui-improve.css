@@ -31,6 +31,18 @@
     font-size: min(20px,4vw);
 }
 
+/* 窄屏下左上角网页标题与右上角网页导航 */
+@media (max-width: 767px) {
+    .navbar-custom .navbar-brand {
+        color:#580847;
+        text-shadow: #f0005494 1px 0 10px;
+    }
+    .navbar-custom .nav li a {
+        color:#580847;
+        text-shadow: #f0005494 1px 0 5px;
+    }
+}
+
 /* 文章标题 */
 .intro-header .post-heading,
 .intro-header .page-heading {

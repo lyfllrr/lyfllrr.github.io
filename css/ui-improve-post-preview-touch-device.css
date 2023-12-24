@@ -16,7 +16,7 @@
     width: 100%;
     height:100%;
     z-index: -1;
-    border-radius: 3rem;
+    border-radius: 1.75rem;
     clip-path:fill-box;
 }
 .post-preview > a > .post-title {
