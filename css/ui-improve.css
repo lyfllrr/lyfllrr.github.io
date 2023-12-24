@@ -1,27 +1,27 @@
 /* 左上角网页标题 */
 .navbar-custom .navbar-brand {
-    color:#333333;
-    text-shadow: pink 1px 0 10px;
+    color:#e0e0e0;
+    text-shadow: #f00056 1px 0 10px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(230, 73, 128, 0.8);
 }
 
 /* 右上角网页导航 */
 .navbar-custom .nav li a {
-    color:#333333;
-    text-shadow: pink 1px 0 5px;
+    color:#e0e0e0;
+    text-shadow: #f00056 1px 0 5px;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(230, 73, 128, 0.8);
 }
 
 /* 页面标题 */
 .intro-header .site-heading {
-    color:#333333;
-    text-shadow: 1px 1px 2px pink;
+    color:#F0F0F0;
+    text-shadow: 1px 1px 2px #f00056;
     user-select: none;
 }
 .intro-header .site-heading h1 {
