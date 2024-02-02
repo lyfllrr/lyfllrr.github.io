@@ -1,0 +1,75 @@
+---
+layout: post
+title: 妈妈…变成了同学的淫母
+header-img: 2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/header.jpg
+subtitle: 第一章
+date: 2024-02-02
+categories: blog
+readfromright: true
+isOriginalArtwork: true
+tags: [妈妈…变成了同学的淫母, 萧韵儿, 绿母]
+description:
+  我叫比嘉佑，今年刚上高一。自幼丧父的我多年来一直跟妈妈一起生活。<br>
+  妈妈作为一个女人，实在是过于温柔性感。<br>
+  当意识到这一点时，我已经陷入对妈妈的情爱中无法自拔。<br>
+  不过，寡居多年的妈妈也一定很渴望被人再次爱着吧。<br>
+  ……我一定，会让妈妈幸福的。<br>
+imgUrls:
+  [
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/000cover.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/01.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/02.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/03.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/04.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/05.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/06.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/07.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/08.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/09.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/10.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/11.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/12.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/13.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/14.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/15.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/16.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/17.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/18.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/19.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/20.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/21.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/22.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/23.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/24.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/25.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/26.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/27.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/28.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/29.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/30.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/31.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/32.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/33.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/34.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/35.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/36.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/37.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/38.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/39.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/40.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/41.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/42.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/43.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/44.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/45.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/46.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/47.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/48.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/49.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/50.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/51.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/52.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/53.jpg,
+2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/54.jpg
+  ]
+---
