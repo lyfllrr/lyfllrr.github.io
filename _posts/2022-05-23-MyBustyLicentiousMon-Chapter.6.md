@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 丰乳肥臀的淫乱妈妈第六章
-series: 丰乳肥臀的淫乱妈妈
+title: 丰乳肥臀的淫乱妈妈
+series: MyBustyLicentiousMon
 header-img: 2022-05-23-MyBustyLicentiousMon-Chapter.6/4.jpg
-subtitle: 那扇门，被妈妈打开了
+subtitle: 第六章 那扇门，被妈妈打开了
 date: 2022-5-23
 categories: blog
 isOriginalArtwork: true

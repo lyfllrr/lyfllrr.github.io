@@ -1,10 +1,10 @@
 ---
 layout: post
 headerStyle: color:rgb(33,33,33)
-title: 丰乳肥臀的淫乱妈妈第二章
-series: 丰乳肥臀的淫乱妈妈
+title: 丰乳肥臀的淫乱妈妈
+series: MyBustyLicentiousMon
 header-img: 2021-10-01-MyBustyLicentiousMon-Chapter.2/6.1.jpg
-subtitle: 妈妈尝到了同学的肉棒
+subtitle: 第二章 妈妈尝到了同学的肉棒
 date: 2021-10-1
 categories: blog
 isOriginalArtwork: true

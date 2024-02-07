@@ -41,33 +41,46 @@ function createSeriesDiv(seriesPostsMap){
             return;
         }
         let divElement = document.createElement('div');
-        divElement.className = 'series-container';//这里，详细展开
+        divElement.className = 'series-container' + ' ' + key;
+        let backgroundImage = document.createElement('div');
+        backgroundImage.className = 'backgroundImage';
+        divElement.appendChild(backgroundImage);
       
         let ulElement = document.createElement('ul');
         values.forEach(value => {
-            let liElement = document.createElement('li');
-            liElement.textContent = value.textContent;//这里，详细展开
-            ulElement.insertAdjacentElement('afterbegin', liElement); 
+            //这里，详细展开
+            let url = document.createElement('a');
+            value.textContent = '';
+            url.href = value.dataset.url;
+            url.textContent = value.dataset.subtitle;
+            value.appendChild(url);
+            ulElement.insertAdjacentElement('afterbegin', value); 
         });
         divElement.insertAdjacentElement('afterbegin', ulElement);
+        let seriesDiv = document.createElement('div');
+        seriesDiv.className = 'series-name';
+        seriesDiv.textContent = values[0].dataset.title;
+        divElement.insertAdjacentElement('afterbegin', seriesDiv);
         targetNode.insertAdjacentElement('beforebegin', divElement);
     });
 
     let noSeriesPosts = seriesPostsMap.get('noSeries');
     if (noSeriesPosts) {
-      let divElement = document.createElement('div');
-      divElement.className = 'series-container';//这里，详细展开
+        let divElement = document.createElement('div');
+        divElement.className = 'sfwArticle-container';
+        let ulElement = document.createElement('ul');
 
-      let ulElement = document.createElement('ul');
+        noSeriesPosts.forEach(value => {
+            let url = document.createElement('a');
+            value.textContent = '';
+            url.href = value.dataset.url;
+            url.textContent = value.dataset.title;
+            value.appendChild(url);
+            ulElement.insertAdjacentElement('afterbegin', value); 
+        });
 
-      noSeriesPosts.forEach(value => {
-        let liElement = document.createElement('li');
-        liElement.textContent = value.textContent;//这里，详细展开
-        ulElement.appendChild(liElement);
-      });
-
-      divElement.appendChild(ulElement);
-      targetNode.insertAdjacentElement('afterend', divElement);
+        divElement.appendChild(ulElement);
+        targetNode.insertAdjacentElement('afterend', divElement);
     }
     
 }

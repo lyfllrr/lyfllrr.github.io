@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的美腿女友和她的内向表弟
-series: 我的美腿女友和她的内向表弟
+series: MySexyGirlFriendAndHerIntrovertedCousin
 header-img: 2023-05-19-MySexyGirlFriendAndHerIntrovertedCousin-Chapter.1/header.jpg
 subtitle: 第一章
 date: 2023-05-19

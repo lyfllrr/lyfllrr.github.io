@@ -1,0 +1,61 @@
+.series-container {
+    min-height: 162px;
+    max-height: 162px;
+    margin: 0.7%;
+    overflow-y:hidden;
+    transition: 0.4s;
+    color:#e0e0e0;
+    border-radius: 1.5rem;
+    position: relative;
+
+}
+
+.series-container .backgroundImage {
+    filter:blur(0.2rem) brightness(65%);
+    background-size: cover !important; 
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    z-index: -1;
+    border-radius: 1.5rem;
+    transition:0.3s;
+}
+
+.series-container a {
+    color:#e0e0e0;
+    text-decoration: none;
+}
+
+.series-container:hover {
+    max-height: 500px;
+} 
+
+.series-name {
+    text-align:right;
+    margin:0.7%;
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-weight: 600;
+    font-size:19px;
+
+}
+
+.MyBustyLicentiousMon .backgroundImage{
+    background-color: rgb(216, 158, 168);
+}
+
+.MySexyGirlFriendAndHerIntrovertedCousin .backgroundImage{
+    background-color:rgb(150, 0, 0);
+}
+
+.HeGotMyMomAsASluttyMother .backgroundImage{
+    background-color: rgb(174, 76, 159);
+}
+
+.sfwArticle-container {
+    margin-top:2%;
+}
+
+.sfwArticle-container a {
+    text-decoration: none;
+}

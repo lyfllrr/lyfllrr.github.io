@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 妈妈…变成了同学的淫母
+series: HeGotMyMomAsASluttyMother
 header-img: 2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/header.jpg
 subtitle: 第一章
 date: 2024-02-02
