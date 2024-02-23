@@ -9,7 +9,9 @@ readfromright: true
 isOriginalArtwork: false
 tags: [evy scarlet, 媚黑]
 description:
-  这是我的朋友的漫画作品，希望大家能喜欢。
+  这是我的朋友的漫画作品，希望大家能喜欢。<br>
+  作者：evy scarlet<br>
+  Pixiv主页：<a href="https://www.pixiv.net/users/16097715">https://www.pixiv.net/users/16097715</a><br>
 author: evy scarlet
 imgUrls:
   [
