@@ -24,6 +24,9 @@ layout: default
                     {% endif %}
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif
                         %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                    <span class="busuanzi-counter" id="busuanzi_container_page_pv">  
+                        Total <span id="busuanzi_value_page_pv"></span> views
+                    </span>
                 </div>
             </div>
         </div>

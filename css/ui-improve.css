@@ -30,6 +30,12 @@
 .intro-header .site-heading .subheading {
     font-size: min(20px,4vw);
 }
+.busuanzi-counter {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+}
 
 /* 窄屏下左上角网页标题与右上角网页导航 */
 @media (max-width: 767px) {
