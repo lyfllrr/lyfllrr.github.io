@@ -176,7 +176,7 @@ layout: default
                             </div> 
                         </div> -->
                         {% for url in page.imgUrls %}
-                        <a href="https://d3i33ap8n3le07.cloudfront.net/{{ url }}" class="mangaBlocks" data-pswp-width data-pswp-height target="_blank">
+                        <a href="https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/{{ url }}" class="mangaBlocks" data-pswp-width data-pswp-height target="_blank">
                             <img class="mangaThumbnails" id="img{{ forloop.index0 }}" loading="lazy"
                                 data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ url }}" alt="" />
                             <div class="pageNumber">P{{ forloop.index }}</div>
