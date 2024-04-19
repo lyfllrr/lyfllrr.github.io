@@ -8,6 +8,7 @@ categories: blog
 isOriginalArtwork: false
 tags: [SFW]
 description:
+imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
 imgUrls:
 author: 中毒患者
 ---

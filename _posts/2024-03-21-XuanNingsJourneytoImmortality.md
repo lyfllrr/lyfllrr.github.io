@@ -14,7 +14,26 @@ description:
   作者：evy scarlet<br>
   Pixiv主页：<a href="https://www.pixiv.net/users/16097715">https://www.pixiv.net/users/16097715</a><br>
 author: evy scarlet
+imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
 imgUrls:
+  [
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji1.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji2.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji3.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji4.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji5.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji6.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji7.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji8.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji9.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji10.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji11.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji12.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji13.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji14.png,
+2024-03-21-XuanNingsJourneytoImmortality/xuanningji15.png
+  ]
+thumbNails:
   [
 2024-03-21-XuanNingsJourneytoImmortality/xuanningji1.png,
 2024-03-21-XuanNingsJourneytoImmortality/xuanningji2.png,
