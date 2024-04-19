@@ -13,7 +13,7 @@ description:
   依柔在他们两人乱伦的刺激下也变得奇怪了起来，<br>
   与我激烈交欢后似乎并未满足。<br>
   事情开始有些不对头了……<br>
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 thumbNails:
   [
 2023-07-21-MySexyGirlFriendAndHerIntrovertedCousin-Chapter.2/1.1.jpg,

@@ -14,7 +14,7 @@ description:
   作者：evy scarlet<br>
   Pixiv主页：<a href="https://www.pixiv.net/users/16097715">https://www.pixiv.net/users/16097715</a><br>
 author: evy scarlet
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 imgUrls:
   [
 2024-03-21-XuanNingsJourneytoImmortality/xuanningji1.png,

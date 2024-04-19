@@ -13,7 +13,7 @@ description:
   多年相依为命对母亲萌生淫欲的儿子<br>
   以及……新的学校里，即将相识的同学<br>
   他们三人，会发生怎样的故事呢？<br>
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 thumbNails:
   [
 2023-12-08-HeGotMyMom...AsASluttyMother-Prologue/000cover.jpg,

@@ -14,7 +14,7 @@ description:
   我和爸爸见证着妈妈被同学雄壮的鸡巴征服，并对着妈妈撸出了被淘汰者的精液。<br>
   这……就是我的淫乱妈妈的故事的结局。<br>
   但也是这位淫乱熟妇的性福生活的开始。<br>
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 thumbNails:
   [
     2022-11-26-MyBustyLicentiousMon-Chapter.8/0.0.0.jpg,

@@ -9,7 +9,7 @@ categories: blog
 isOriginalArtwork: true
 tags: [丰乳肥臀的淫乱妈妈, 萧媚儿, 绿妻, 绿母, 小马开大车]
 description: 鬼使神差般的，我把同学带回了家里，没想到妈妈一见到他们，不知被他们用了什么花言巧语，竟然立刻将他们领进了卧室，干柴烈火一般激烈地交合起来，我也在门外看得血脉喷张。一番云雨，妈妈饥渴的身体被小武和小刚轮番灌溉后，变得更加娇艳了。以后……小武和小刚会成常客吗？
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 imgUrls:
   [
 2021-10-01-MyBustyLicentiousMon-Chapter.2/1.1.jpg,

@@ -14,7 +14,7 @@ description:
   当意识到这一点时，我已经陷入对妈妈的情爱中无法自拔。<br>
   不过，寡居多年的妈妈也一定很渴望被人再次爱着吧。<br>
   ……我一定，会让妈妈幸福的。<br>
-imgDomain: https://s3.ap-northeast-1.amazonaws.com/naturerealized.images/
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 thumbNails:
   [
 2024-02-02-HeGotMyMom...AsASluttyMother-Chapter.1/000cover.jpg,
