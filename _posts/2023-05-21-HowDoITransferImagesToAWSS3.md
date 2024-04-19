@@ -8,6 +8,7 @@ categories: blog
 isOriginalArtwork: false
 tags: [SFW]
 description:
+imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 imgUrls:
 author: 中毒患者
 ---
