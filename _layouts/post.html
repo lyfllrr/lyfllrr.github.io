@@ -5,7 +5,7 @@ layout: default
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header {
-        background-image: url('{% if page.header-img %}https://d3i33ap8n3le07.cloudfront.net/{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
+        background-image: url('{% if page.header-img %}{{ page.imgDomain }}{{ page.header-img }}{% else %}{{ site.baseurl }}{{ site.header-img }}{% endif %}')
     }
 </style>
 <header class="intro-header">
