@@ -17,7 +17,7 @@ imgUrls:
 ---
 ### 推广注册链接
 
-推广注册链接：[点此注册Just My Socks](https://justmysocks.net/members/aff.php?aff=26449 "Just My Socks")    
+推广注册链接：<a target="_blank" href="https://justmysocks.net/members/aff.php?aff=26449">点此注册Just My Socks</a>    
 5.2%折扣优惠码：<input value="JMS9272283" readonly="readonly" style="width: 7em;"/> <button onclick="copyText()">点击复制</button> <span id="copyHint" style="display:none">&#10004;</span>
 
 
@@ -25,13 +25,13 @@ imgUrls:
 
 ### 注册教程
 
-注册教程：[Just My Socks账号注册与套餐购买教程](https://bwgjms.github.io/justmysocks-purchase/)
+注册教程：<a target="_blank" href="https://bwgjms.github.io/justmysocks-purchase/">Just My Socks账号注册与套餐购买教程</a>
 
 
 ### 使用方法
 
 具体的使用方法可以参考下面的教程：  
-[Just My Socks使用教程：在电脑或者手机如何连接JustMySocks服务](https://bwgjms.github.io/how-to-use-justmysocks-on-clients/)
+<a target="_blank" href="https://bwgjms.github.io/how-to-use-justmysocks-on-clients/">Just My Socks使用教程：在电脑或者手机如何连接JustMySocks服务</a>
 
 
 
