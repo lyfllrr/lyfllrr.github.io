@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	// if (gallery.getAttribute('readfromright')){
 	// 	gallery.style.flexDirection = 'row-reverse'
 	// }
-	
-	//根据首图尺寸设定本篇图片尺寸
-	setImageSize();
 
 	//根据设备加载不同CSS
 	loadCSSByDevice();
@@ -25,20 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	//首次加载时不执行transition效果
 	noTransitionUntilLoaded();
 })
-
-function setImageSize(){
-	let mangaBlocks = document.querySelectorAll('.mangaBlocks');
-	mangaBlocks.forEach(mangaBlock =>{
-		let img = new Image();
-		img.src=mangaBlock.href;
-		img.onload = function(){
-			for (let i=0;i<mangaBlocks.length;i++){
-				mangaBlock.setAttribute('data-pswp-width', img.width);
-				mangaBlock.setAttribute('data-pswp-height', img.height);
-			}
-		}
-	})	
-}
 
 function isTouchDevice(){
 	return 'ontouchstart' in window || navigator.maxTouchPoints;

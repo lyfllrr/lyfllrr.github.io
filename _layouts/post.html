@@ -35,6 +35,8 @@ layout: default
 
 <link rel="stylesheet" href="/css/backtop.css"> <!-- Back Top -->
 <script type="text/javascript" src="/js/backtop.js"></script> <!-- Back Top -->
+<script src="/lightgallery/lightgallery.min.js"></script>
+<script src="/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
 
 <div id="back-top">
     <a href="#top" title="回到顶部"></a>
@@ -51,154 +53,40 @@ layout: default
                 <br /><br />
                 {% endif %}
                 <p>{{ page.description }}</p>
-                <!-- PhotoSwipe框架调用 start-->
-                <script type="module">
-                    import PhotoSwipeLightbox from '/dist/photoswipe-lightbox.esm.js';
-                    const fullscreenAPI = getFullscreenAPI();
-                    const pswpContainer = getContainer();
-                    function getFullscreenPromise() {
-                        return new Promise((resolve) => {
-                            if (!fullscreenAPI || fullscreenAPI.isFullscreen()) {
-                                resolve();
-                                return;
-                            }
-
-                            document.addEventListener(fullscreenAPI.change, (event) => {
-                                pswpContainer.style.display = 'block';
-                                setTimeout(function () {
-                                    resolve();
-                                }, 300);
-                            }, { once: true });
-
-                            fullscreenAPI.request(pswpContainer);
-                        });
-                    }
-                    
-                    const lightbox = new PhotoSwipeLightbox({
-                        gallery: '#my-gallery',
-                        children: 'a',
-                        pswpModule: () => import('/dist/photoswipe.esm.js'),
-                        openPromise: getFullscreenPromise,
-                        appendToEl: fullscreenAPI ? pswpContainer : document.body,
-                        showAnimationDuration: 0,
-                        hideAnimationDuration: 0,
-                        zoom: false,
-                        preloadFirstSlide: true,
-                        preload: [1, 5],
-                        loop: false,
-                        initialZoomLevel: 'fit',
-                        secondaryZoomLevel: 'fit',
-                        imageClickAction: 'next',
-                        tapAction: 'next',
-                        maxZoomLevel: 'fit'
-                    });
-                    lightbox.on('close', () => {
-                        pswpContainer.style.display = 'none';
-                        if (fullscreenAPI && fullscreenAPI.isFullscreen()) {
-                            fullscreenAPI.exit();
-                        }
-                    });
-                    lightbox.init();
-
-                    function getFullscreenAPI() {
-                        let api;
-                        let enterFS;
-                        let exitFS;
-                        let elementFS;
-                        let changeEvent;
-                        let errorEvent;
-
-                        if (document.documentElement.requestFullscreen) {
-                            enterFS = 'requestFullscreen';
-                            exitFS = 'exitFullscreen';
-                            elementFS = 'fullscreenElement';
-                            changeEvent = 'fullscreenchange';
-                            errorEvent = 'fullscreenerror';
-                        } else if (document.documentElement.webkitRequestFullscreen) {
-                            enterFS = 'webkitRequestFullscreen';
-                            exitFS = 'webkitExitFullscreen';
-                            elementFS = 'webkitFullscreenElement';
-                            changeEvent = 'webkitfullscreenchange';
-                            errorEvent = 'webkitfullscreenerror';
-                        }
-
-                        if (enterFS) {
-                            api = {
-                                request: function (el) {
-                                    if (enterFS === 'webkitRequestFullscreen') {
-                                        el[enterFS](Element.ALLOW_KEYBOARD_INPUT);
-                                    } else {
-                                        el[enterFS]();
-                                    }
-                                },
-
-                                exit: function () {
-                                    return document[exitFS]();
-                                },
-
-                                isFullscreen: function () {
-                                    return document[elementFS];
-                                },
-
-                                change: changeEvent,
-                                error: errorEvent
-                            };
-                        }
-
-                        return api;
-                    };
-
-                    function getContainer() {
-                        const pswpContainer = document.createElement('div');
-                        pswpContainer.style.background = '#000';
-                        pswpContainer.style.width = '100%';
-                        pswpContainer.style.height = '100%';
-                        pswpContainer.style.display = 'none';
-                        document.body.appendChild(pswpContainer);
-                        return pswpContainer;
-                    }
-
-                    function fullscreenchanged(event) {
-                        if (!document.fullscreenElement) {
-                            lightbox.pswp['close']();
-                        }
-                    }
-                    document.onfullscreenchange = fullscreenchanged;
-                </script>
-                <link rel="stylesheet" href="/dist/photoswipe.css">
-                <div id="app">
-                    <div class="pswp-gallery mangaGallery" id="my-gallery" readFromRight="{{ page.readFromRight }}"">
-                        <!-- <div class="mangaBlocks" >
-                            <div id="directionGuider">阅读方向
-                                <br/>
-                                {% if page.readFromRight %}
-                                ←
-                                {% else %}
-                                →
-                                {% endif %}
-                            </div> 
-                        </div> -->
-                        {% for thumbNail in page.thumbNails %}
-                        <a href="{{ page.imgDomain }}{{ page.imgUrls[forloop.index0] }}" class="mangaBlocks" data-pswp-width data-pswp-height target="_blank">
-                            <img class="mangaThumbnails" id="img{{ forloop.index0 }}" loading="lazy"
-                                data-src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ thumbNail }}" alt="" />
-                            <div class="pageNumber">P{{ forloop.index }}</div>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    <!-- 顺序加载thumbnail脚本 start -->
-                    <script>
-                        function loadImage(counter) {
-                            if (counter >= '{{ page.imgUrls.size }}') { return; }
-                            var img = document.getElementById("img" + counter);
-                            img.src = img.dataset.src;
-                            loadImage(counter + 1)
-                        }
-                        loadImage(0);
-                    </script>
-                    <!-- 顺序加载thumbnail脚本 end -->
+                <!-- lightGallery框架调用 start-->
+                <div class="mangaGallery" id="my-gallery" readFromRight="{{ page.readFromRight }}"">
+                    <!-- <div class="mangaBlocks" >
+                        <div id="directionGuider">阅读方向
+                            <br/>
+                            {% if page.readFromRight %}
+                            ←
+                            {% else %}
+                            →
+                            {% endif %}
+                        </div> 
+                    </div> -->
+                    {% for thumbNail in page.thumbNails %}
+                    <a href="{{ page.imgDomain }}{{ page.imgUrls[forloop.index0] }}" class="mangaBlocks">
+                        <img class="mangaThumbnails" id="img{{ forloop.index0 }}" src="https://d3i33ap8n3le07.cloudfront.net/resized/{{ thumbNail }}" alt="" />
+                        <div class="pageNumber">P{{ forloop.index }}</div>
+                    </a>
+                    {% endfor %}
                 </div>
-                <!-- PhotoSwipe框架调用 end -->
+                <script type="text/javascript">
+                    lightGallery(document.getElementById('my-gallery'), {
+                        plugins: [lgFullscreen],
+                        speed: 400,
+                        download: false,
+                        hideControlOnEnd: true,
+                        hideScrollbar: true,
+                        loop: false,
+                        mousewheel: true,
+                        preload: 2,
+                        zoomFromOrigin: false,
+                        licenseKey:123
+                    });
+                </script>
+                <!-- lightGallery框架调用 end -->
                 <!-- 图片之后如果有正文会出现在这里 -->
                 <p>{{ content }}</p>
                 <!-- 版权声明(仅原创内容时显示) start -->
