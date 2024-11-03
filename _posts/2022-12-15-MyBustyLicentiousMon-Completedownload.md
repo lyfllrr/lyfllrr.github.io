@@ -12,6 +12,6 @@ imgDomain: https://d3i33ap8n3le07.cloudfront.net/
 imgUrls:
 ---
 
-Mega 云盘（需翻墙）下载地址：[请点我](https://mega.nz/file/rFkyRBQQ#5YK7Oj6IyW16UJFPTlTgmBjanpnm2JxiYgnHabEbXU8 "Mega云盘")
+MegaDrive（需翻墙）下载地址：[请点我](https://mega.nz/file/rFkyRBQQ#5YK7Oj6IyW16UJFPTlTgmBjanpnm2JxiYgnHabEbXU8 "MegaDrive")
 
-iCloud 云盘（无需翻墙）下载地址：[请点我](https://www.icloud.com/iclouddrive/054gBdEfuHLFyqMYcnm2WiTeA#%E8%90%A7%E5%AA%9A%E5%84%BF "iCloud云盘")
+OneDrive（无需翻墙）下载地址：[请点我](https://1drv.ms/u/c/f9656244127449a9/EfSw0hYJvJ9Dto1RIvf-BakByp2QrfrHxnoumHChcglFFQ?e=qGcjvm "OneDrive")

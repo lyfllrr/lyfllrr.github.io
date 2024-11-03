@@ -13,9 +13,9 @@ imgUrls:
 ---
 ### 漫画全章节内容下载
 
-Mega 云盘（需翻墙）下载地址：[请点我](https://mega.nz/file/CcVFmQCS#U0TmUc4iUb3MSnswwZW5y3sFwmJ4B6f8ajDCh8kGtOE "Mega云盘")
+MegaDrive（需翻墙）下载地址：[请点我](https://mega.nz/file/CcVFmQCS#U0TmUc4iUb3MSnswwZW5y3sFwmJ4B6f8ajDCh8kGtOE "MegaDrive")
 
-iCloud（无需翻墙）下载地址：[请点我](https://www.icloud.com/iclouddrive/0c2boeq_4u3hkYPiJm9yt0cfg#%E6%88%91%E7%9A%84%E7%BE%8E%E8%85%BF%E5%A5%B3%E5%8F%8B%E5%92%8C%E5%A5%B9%E7%9A%84%E5%86%85%E5%90%91%E8%A1%A8%E5%BC%9F)
+OneDrive（无需翻墙）下载地址：[请点我](https://1drv.ms/u/c/f9656244127449a9/EalJdBJEYmUggPlsAAAAAAABYwPINlBlHdhs9lgNOfu6IA?e=fChmLJ "OneDrive")
 
 ### 赞助链接及无对白版本下载
 
