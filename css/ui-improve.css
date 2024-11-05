@@ -141,6 +141,16 @@
     display: none !important;
 }
 
+/* 重置Dlsite广告z-index */
+html body div[id*="DLsite_blog_parts_00"].bp_ranking div.DLsite_bp_body div.DLsite_bp_box_01 p,
+html body div[id*="DLsite_blog_parts_00"].bp_title div.DLsite_bp_body div.DLsite_bp_title_wrap,
+html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_box_01 .icon_lead_01,
+html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_logo,
+html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_btn_prev,
+html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_btn_next {
+    z-index: 1 !important;
+}
+
 /* 漫画插件：首格方向指示
 #directionGuider {
     position:relative;
