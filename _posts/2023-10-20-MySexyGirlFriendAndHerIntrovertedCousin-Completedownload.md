@@ -13,7 +13,7 @@ imgUrls:
 ---
 ### 漫画全章节内容下载
 
-MegaDrive（需翻墙）下载地址：[请点我](hhttps://mega.nz/file/6N0UVYZZ#ro81K4f5SyCx0JN2YhL3B0VedPCloVAWrHmqQANF4gc "MegaDrive")
+MegaDrive（需翻墙）下载地址：[请点我](https://mega.nz/file/6N0UVYZZ#ro81K4f5SyCx0JN2YhL3B0VedPCloVAWrHmqQANF4gc "MegaDrive")
 
 OneDrive（无需翻墙）下载地址：[请点我](https://1drv.ms/u/c/f9656244127449a9/EalJdBJEYmUggPlsAAAAAAABYwPINlBlHdhs9lgNOfu6IA?e=fChmLJ "OneDrive")
 
