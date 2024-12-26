@@ -1,7 +1,7 @@
 name: Merge New Manga Branches
 on:
   schedule:
-    - cron: "55 20 * * 5"
+    - cron: "55 11 * * 5"
   workflow_dispatch:
 
 jobs:
