@@ -6,7 +6,7 @@
 
 ## 新漫画定时发布
 
-新分支取名为{YYYY-MM-DD-new-manga}，则会在UTC时间每周五晚7:55自动为此分支创建PR并自动merge，具体设置需参阅：[Github Actions](https://github.com/lyfllrr/lyfllrr.github.io/blob/main/.github/workflows/merge-pr.yml)
+新分支取名为{YYYY-MM-DD-new-manga}，则会在UTC时间每周五11:55(即北京时间晚7:55)自动为此分支创建PR并自动merge，具体设置需参阅：[Github Actions](https://github.com/lyfllrr/lyfllrr.github.io/blob/main/.github/workflows/merge-pr.yml)
 
 ## 第三方功能
 
