@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  merge_weekly_branch:
+  merge_new_manga_branch:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-
+          
       - name: Create and merge PR
         env:
           GITHUB_TOKEN: ${{ secrets.AUTOMERGENEWBLOGTOKEN }}
@@ -26,19 +26,22 @@ jobs:
 
           # Construct the branch name
           branch_name="${current_date}-new-manga"
-          # Fetch the branch to ensure it exists locally
-          git fetch origin ${branch_name}
 
-          # Check if the branch exists
-          if [[ -n "$(git ls-remote origin $branch_name)" ]]; then
-            git checkout ${branch_name}
-            # Create a pull request using GitHub CLI
-            gh pr create --base main --head $branch_name --title "New manga of blog at '${current_date}'" --body "This is a PR for new manga of blog."
+          # Check if the branch exists on the remote
+          if git ls-remote --exit-code origin "$branch_name"; then
+              # Check if a PR already exists
+              existing_pr=$(gh pr list --base main --head $branch_name --state open --json url --jq '.[0].url')
+              if [[ -n "$existing_pr" ]]; then
+                  echo "PR already exists: $existing_pr"
+                  gh pr merge --squash "$existing_pr"
+              else
+                  # Create a pull request using GitHub CLI
+                  gh pr create --base main --head $branch_name --title "New manga of blog at '${current_date}'" --body "This is a PR for new manga of blog."
 
-            # Wait for a few seconds to allow GitHub to process the PR creation
-            sleep 15
-            # Merge the pull request using GitHub CLI
-            gh pr merge --squash
+                  sleep 5
+                  # Merge the pull request using GitHub CLI
+                  gh pr merge --squash
+              fi
           else
-            echo "branch '${branch_name}' does not exist. There's no new manga to auto-merge."
+              echo "Branch '$branch_name' does not exist. There's no new manga to auto-merge."
           fi
