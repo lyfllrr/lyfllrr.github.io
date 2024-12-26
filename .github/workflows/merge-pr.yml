@@ -1,0 +1,44 @@
+name: Merge New Manga Branches
+on:
+  schedule:
+    - cron: "55 20 * * 5"
+  workflow_dispatch:
+
+jobs:
+  merge_weekly_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Create and merge PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.AUTOMERGENEWBLOGTOKEN }}
+        run: |
+          # Get the current date in the format 'YYYY-MM-DD'
+          current_date=$(date +%Y-%m-%d)
+
+          # Construct the branch name
+          branch_name="${current_date}-new-manga"
+          # Fetch the branch to ensure it exists locally
+          git fetch origin ${branch_name}
+
+          # Check if the branch exists
+          if [[ -n "$(git ls-remote origin $branch_name)" ]]; then
+            git checkout ${branch_name}
+            # Create a pull request using GitHub CLI
+            gh pr create --base main --head $branch_name --title "New manga of blog at '${current_date}'" --body "This is a PR for new manga of blog."
+
+            # Wait for a few seconds to allow GitHub to process the PR creation
+            sleep 15
+            # Merge the pull request using GitHub CLI
+            gh pr merge --squash
+          else
+            echo "branch '${branch_name}' does not exist. There's no new manga to auto-merge."
+          fi
