@@ -4,6 +4,10 @@
 
 配套说用说明：[如何搭建一个独立博客——简明 GitHub Pages 与 jekyll 教程 - 读立写生](http://www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/)
 
+## 新漫画定时发布
+
+新分支取名为{YYYY-MM-DD-new-manga}，则会在UTC时间每周五晚7:55自动为此分支创建PR并自动merge，具体设置需参阅：[Github Actions](https://github.com/lyfllrr/lyfllrr.github.io/blob/main/.github/workflows/merge-pr.yml)
+
 ## 第三方功能
 
 - 图床使用了[Cloudflare R2](https://www.cloudflare.com/ja-jp/developer-platform/r2/)
