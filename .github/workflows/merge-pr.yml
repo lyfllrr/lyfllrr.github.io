@@ -1,7 +1,7 @@
 name: Merge New Manga Branches
 on:
   schedule:
-    - cron: "55 11 * * 5"
+    - cron: "52 11 * * 5"
   workflow_dispatch:
 
 jobs:
@@ -29,19 +29,25 @@ jobs:
 
           # Check if the branch exists on the remote
           if git ls-remote --exit-code origin "$branch_name"; then
-              # Check if a PR already exists
-              existing_pr=$(gh pr list --base main --head $branch_name --state open --json url --jq '.[0].url')
-              if [[ -n "$existing_pr" ]]; then
-                  echo "PR already exists: $existing_pr"
-                  gh pr merge --squash "$existing_pr"
-              else
-                  # Create a pull request using GitHub CLI
-                  gh pr create --base main --head $branch_name --title "New manga of blog at '${current_date}'" --body "This is a PR for new manga of blog."
+            # Check if a PR already exists
+            existing_pr=$(gh pr list --base main --head $branch_name --state open --json url --jq '.[0].url')
 
-                  sleep 5
-                  # Merge the pull request using GitHub CLI
-                  gh pr merge --squash
+            if [[ -n "$existing_pr" ]]; then
+              echo "Existing PR found: $existing_pr"
+              # Merge the existing PR
+              gh pr merge --squash "$existing_pr"
+            else
+              echo "Creating PR."
+              # Create a new pull request
+              pr_url=$(gh pr create --base main --head $branch_name --title "New manga of blog at '${current_date}'" --body "This is a PR for new manga of blog.")
+              if [[ -n "$pr_url" ]]; then
+                echo "Created PR: $pr_url"
+                # Merge the newly created PR
+                gh pr merge --squash "$pr_url"
+              else
+                echo "Failed to create PR."
               fi
+            fi
           else
-              echo "Branch '$branch_name' does not exist. There's no new manga to auto-merge."
+            echo "Branch '$branch_name' does not exist. There's no new manga to auto-merge."
           fi
