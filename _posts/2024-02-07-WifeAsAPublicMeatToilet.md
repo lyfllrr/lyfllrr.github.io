@@ -14,7 +14,7 @@ description:
   Pixiv主页：<a href="https://www.pixiv.net/users/16097715">https://www.pixiv.net/users/16097715</a><br>
 author: evy scarlet
 imgDomain: https://image.naturerealized.com/
-thumbNails:
+imgUrls:
   [
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie1.webp,
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie2.webp,
@@ -38,7 +38,7 @@ thumbNails:
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie20.webp,
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie21.webp
   ]
-imgUrls:
+thumbNails:
   [
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie1.jpg,
 2024-02-07-WifeAsAPublicMeatToilet-Chapter.2/kongjie2.jpg,
