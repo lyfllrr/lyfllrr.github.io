@@ -24,8 +24,8 @@ layout: default
                     {% endif %}
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif
                         %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                    <span class="busuanzi-counter" id="busuanzi_container_page_pv">  
-                        Total <span id="busuanzi_value_page_pv"></span> views
+                    <span class="view-counter">  
+                        Total <span class="waline-pageview-count" data-path="{{ page.url }}"></span> views
                     </span>
                 </div>
             </div>
@@ -120,30 +120,26 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-                <!-- DLsite 广告-->
-                <script type="text/javascript">blogparts = { "id": "12587", "ssl": "1" }</script>
-                <script type="text/javascript" src="https://www.dlsite.com/js/blogparts.js" charset="UTF-8"></script>
-                <!-- LiveRe评论框 start -->
-                {% if page.comments or page.comments == "" or page.comments == nil %}
 
-                <div id="lv-container" data-id="city" data-uid="MTAyMC81Nzg1Mi8zNDMxNQ==">
-                    <script type="text/javascript">
-                            (function (d, s) {
-                                var j, e = d.getElementsByTagName(s)[0];
+                <!-- Waline评论区 start -->
+                <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+                <div id="waline"></div>
+                <script type="module">
+                    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-                                if (typeof LivereTower === 'function') { return; }
+                    init({
+                        el: '#waline',
+                        reaction: true,
+                        pageview: true,
+                        emoji: ['//unpkg.com/@waline/emojis@1.4.0/alus', 'https://unpkg.com/@waline/emojis@1.4.0/qq'],
+                        serverURL: 'https://waline-for-naturerealized.vercel.app/',
+                        locale: {
+                            reactionTitle: '留下你的评论吧！',
+                        }
+                    });
+                </script>
+                <!-- Waline评论区 end -->
 
-                                j = d.createElement(s);
-                                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                                j.async = true;
-
-                                e.parentNode.insertBefore(j, e);
-                            })(document, 'script');
-                    </script>
-                    <noscript>你需要打开浏览器的JS功能以查看评论</noscript>
-                </div>
-                {% endif %}
-                <!-- LiveRe评论框 end -->
             </div>
         </div>
     </div>

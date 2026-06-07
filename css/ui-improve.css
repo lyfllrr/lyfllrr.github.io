@@ -30,7 +30,7 @@
 .intro-header .site-heading .subheading {
     font-size: min(20px,4vw);
 }
-.busuanzi-counter {
+.view-counter {
     font-family: 'Lora', 'Times New Roman', serif;
     font-style: italic;
     font-weight: 300;
@@ -136,21 +136,6 @@
     display: block;
 } 
 
-/* 隐藏评论系统广告 */
-.trc-content-sponsored {
-    display: none !important;
-}
-
-/* 重置Dlsite广告z-index */
-html body div[id*="DLsite_blog_parts_00"].bp_ranking div.DLsite_bp_body div.DLsite_bp_box_01 p,
-html body div[id*="DLsite_blog_parts_00"].bp_title div.DLsite_bp_body div.DLsite_bp_title_wrap,
-html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_box_01 .icon_lead_01,
-html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_logo,
-html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_btn_prev,
-html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_btn_next {
-    z-index: 1 !important;
-}
-
 /* 漫画插件：首格方向指示
 #directionGuider {
     position:relative;
@@ -162,4 +147,8 @@ html body div[id*="DLsite_blog_parts_00"] div.DLsite_bp_body div.DLsite_bp_btn_n
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size:max(20px,1.5em)
 } */
+
+div[data-waline] {
+    font-size: 21px;
+}
 
