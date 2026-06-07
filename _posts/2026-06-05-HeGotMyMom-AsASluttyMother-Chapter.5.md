@@ -8,6 +8,10 @@ categories: blog
 readfromright: true
 isOriginalArtwork: true
 tags: [妈妈…变成了同学的淫母, 萧韵儿, 绿母]
+description:
+  在巨大的冲击面前无所适从的我，却阴差阳错地与妈妈的关系更进一步。<br>
+  小姨说得对，我和妈妈都太爱把话藏在心里了。<br>
+  既然妈妈向我坦诚了一切，我也…<br>
 imgDomain: https://image.naturerealized.com/
 imgUrls:
   [
