@@ -79,3 +79,21 @@
     padding-bottom: 10rem;
 }
 
+.post-preview:focus-within .post-preview-background-image {
+    opacity:1;
+}
+.post-preview:focus-within .post-title,
+.post-preview:focus-within .post-subtitle,
+.post-preview:focus-within .post-content-preview,
+.post-preview:focus-within .post-meta {
+    color:#f0f0f0;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D1255C;
+    z-index: 1;
+}
+.post-preview:focus-within .post-meta {
+    padding-bottom: 10rem;
+}
+.post-preview > a:focus {
+    outline: none;
+}
+

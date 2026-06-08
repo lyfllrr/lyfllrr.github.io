@@ -91,3 +91,7 @@
         box-shadow: 0px 5px 5px #d1255caf;
     }
 }
+
+.post-preview > a:focus {
+    outline: none;
+}
