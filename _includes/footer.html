@@ -7,15 +7,15 @@
                     <li>
                         <img class="otherSiteIcon" alt="feed订阅" src="/img/feed.ico" onclick="window.open('/feed.xml', '_blank');"/>
                     </li>
-                    {% if site.twitter_username %}
+                    {% if site.x_username %}
                     <li>
-                        <img class="otherSiteIcon" alt="Twitter主页" src="/img/x.ico" onclick="window.open('https://x.com/{{ site.twitter_username }}', '_blank');"/>
+                        <img class="otherSiteIcon" alt="X主页" src="/img/x.ico" onclick="window.open('https://x.com/{{ site.x_username }}', '_blank');"/>
                     </li>
                     {% endif %}
                     
-                    {% if site.gumroad_username %}
+                    {% if site.telegram_group_link %}
                     <li>
-                        <img class="otherSiteIcon gumroadIcon" alt="赞助网站Gumroad" src="/img/gumroad-gray.ico" onclick="window.open('https://{{ site.gumroad_username }}.gumroad.com', '_blank');"/>
+                        <img class="otherSiteIcon telegramIcon" alt="Telegram群组" src="/img/telegram.ico" onclick="window.open('{{ site.telegram_group_link }}', '_blank');"/>
                     </li>
                     {% endif %}
                     
