@@ -82,8 +82,8 @@
     filter: contrast(1);
     transition:0.5s;
 }
-.gumroadIcon:hover {
-    background-image: url(/img/gumroad-background.ico);
+.telegramIcon:hover {
+    background-image: url(/img/telegram-background.ico);
     background-size: contain;
     background-repeat: no-repeat;
 }

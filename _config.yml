@@ -11,8 +11,8 @@ future: true
 owner:
   name: "NTR中毒患者" # 填写作者信息：名字
 
-twitter_username: weloventr4ever
-gumroad_username: weloventr4ever
+x_username: weloventr4ever
+telegram_group_link: https://t.me/naturerealized
 
 # Build settings
 # use Github Flavored Markdown !important
